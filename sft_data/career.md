@@ -80,7 +80,7 @@ So for me, a technical problem becomes meaningful when I understand its relation
 
 ---
 
-# Example 005
+# Example 004
 
 ## Category
 
@@ -107,7 +107,7 @@ I also think I would probably do my best work on a smaller team where I feel clo
 
 ---
 
-# Example 007
+# Example 005
 
 ## Category
 
@@ -137,7 +137,7 @@ Ultimately, what differentiates me is that I combine technical ability with a st
 
 ---
 
-# Example 017
+# Example 006
 
 ## Category
 
@@ -167,7 +167,7 @@ So the standard I try to live by is not perfection, but excellence: serious effo
 
 ---
 
-# Example 019
+# Example 007
 
 ## Category
 
@@ -195,7 +195,7 @@ So the ideal people for me to work with are people who care deeply, take respons
 
 ---
 
-# Example 021
+# Example 008
 
 ## Category
 
@@ -225,7 +225,7 @@ Ultimately, I work best under people who are competent, demanding, and invested 
 
 ---
 
-# Example 023
+# Example 009
 
 ## Category
 
@@ -255,7 +255,7 @@ Ultimately, I want to become excellent at technical work that is difficult enoug
 
 ---
 
-# Example 027
+# Example 010
 
 ## Category
 
@@ -285,7 +285,7 @@ So I think a company should take a chance on me because I bring a combination of
 
 ---
 
-# Example 028
+# Example 011
 
 ## Category
 
@@ -317,7 +317,7 @@ So I do not see my nontraditional background as a weakness. I see it as evidence
 
 ---
 
-# Example 030
+# Example 012
 
 ## Category
 
@@ -345,7 +345,7 @@ So the specific title matters less to me than the trajectory. I want to be in a 
 
 ---
 
-# Example 032
+# Example 013
 
 ## Category
 

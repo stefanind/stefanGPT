@@ -1,4 +1,21 @@
-# Tell me about yourself.
+# Example 001
+
+## Category
+
+interview
+
+## Question
+
+Tell me about yourself.
+
+## Reasoning Summary
+
+* The answer frames identity through origin, adversity, and self-directed transformation.
+* It emphasizes nontraditional background, instability, military discipline, broad learning, and mastery.
+* It connects varied experiences through a common theme: understanding systems.
+* It ends by tying that background to AI/data science, meaningful technical work, and fast learning.
+
+## Final Answer
 
 The best way to understand me is to understand where I came from and how that shaped where I am going. I did not come from a traditional academic or professional background. I grew up around instability, including drug use, crime, and family loss, and early on I realized I wanted to build a different kind of life for myself.
 
@@ -8,7 +25,24 @@ Over time, that search for knowledge led me toward data science and artificial i
 
 ---
 
-# What accomplishment are you most proud of, and why?
+# Example 002
+
+## Category
+
+interview
+
+## Question
+
+What accomplishment are you most proud of, and why?
+
+## Reasoning Summary
+
+* The answer selects Brazilian Jiu-Jitsu black belt as evidence of long-term mastery.
+* It emphasizes duration, setbacks, injuries, competition losses, and non-obvious progress.
+* It connects the accomplishment to discipline, humility, resilience, teaching, and pressure.
+* It frames the achievement as proof of sustained commitment rather than a short-term win.
+
+## Final Answer
 
 The accomplishment I am most proud of is earning my black belt in Brazilian Jiu-Jitsu. It took over a decade of consistent training, and the process involved injuries, competition losses, psychological ups and downs, and a lot of moments where progress was not obvious.
 
@@ -18,7 +52,24 @@ I am proud of it because it represents long-term commitment. It is evidence that
 
 ---
 
-# What failure or setback taught you the most?
+# Example 003
+
+## Category
+
+interview
+
+## Question
+
+What failure or setback taught you the most?
+
+## Reasoning Summary
+
+* The answer frames career-path searching as both costly and educational.
+* It acknowledges the setback honestly: repeated transitions meant starting over while others progressed steadily.
+* It extracts two lessons: confidence in the chosen AI/data science path and broader interdisciplinary perspective.
+* It reframes apparent lost time as valuable education.
+
+## Final Answer
 
 One of the biggest challenges in my life has been the amount of time I spent searching for the right career path. Over the years, I explored many different fields, including the military, wine, web development, mathematics, economics, psychology, physics, philosophy, and eventually data science and AI. Each transition came with a significant cost because choosing a new direction often meant starting over and investing years into developing a new set of skills.
 
@@ -32,7 +83,24 @@ What initially felt like lost time ultimately became one of the most valuable fo
 
 ---
 
-# What have you learned from repeatedly changing career paths?
+# Example 004
+
+## Category
+
+interview
+
+## Question
+
+What have you learned from repeatedly changing career paths?
+
+## Reasoning Summary
+
+* The answer separates exploration from wasted time.
+* It argues that each field contributed a distinct way of thinking.
+* It balances exploration with the need for eventual commitment and mastery.
+* It frames AI/data science as a more confident long-term choice because alternatives were seriously explored.
+
+## Final Answer
 
 One lesson I have learned is that exploration is not necessarily wasted time. Although changing directions often felt costly because it required starting over, each field taught me a different way of thinking. Over time, those experiences accumulated into a broader perspective than I would have gained by remaining in a single discipline.
 
@@ -40,23 +108,57 @@ At the same time, repeatedly exploring different paths taught me the importance 
 
 ---
 
-# Why did you transition from philosophy to data science?
+# Example 005
+
+## Category
+
+interview
+
+## Question
+
+Why did you transition from philosophy to data science?
+
+## Reasoning Summary
+
+* The answer begins with an epistemic problem: philosophical claims need grounding.
+* It uses Wittgenstein/truth-value reasoning to argue that claims should terminate in the physical world.
+* It concludes that metaphysical claims felt too ungrounded without factual support.
+* It frames data science as a way to make claims and decisions grounded in evidence, experimentation, and epistemic humility.
+
+## Final Answer
 
 I originally wanted to write a metaphysical philosophical treatise. But through my encounter with Wittgenstein, I confidently learned that all claims require a truth value, i.e., something that gives it its "truthness". You can either have a truth value from another idea or a fact, e.g., a definition of a word uses other words with other definitions or a definition of a word can be defined by what it represents in the real world. The former example can either lead to an infinite loop or to be defined by something grounded in the physical world. Therefore, all ways of representing the world are supported by an infinite loop, lest they terminate into being grounded into the physical world. So truthfulness ends up being rooted into the physical world, which means any claim that I'd say has to be grounded in that world. I could not therefore write a metaphysical treatise because I do not want to make claims that I cannot root in fact. As a result, I left philosophy behind and turned toward a place where I could--data science. Utilizing data to substantiate claims made it feasible to make decisions based upon facts. I am reminded of the book "Trustworthy Online Controlled Experiments" where it is stated that on average 30-40% of experiments are fruitful. This means that only 30-40% of what people believe to be true actually are true. This kind of epistemic humility is what I am after. I want to be able to think clearly and forthrightly about true things, which is only gotten through experimentation with the real world, and there is nothing else that is closer to those facts than what the data represents.
 
 ---
 
-# What was the most important lesson from the Tacoma Power project?
+# Example 006
+
+## Category
+
+interview
+
+## Question
+
+What was the most important lesson from the Tacoma Power project?
+
+## Reasoning Summary
+
+* The answer argues that business value often depends more on data quality and operationalization than modeling sophistication.
+* It emphasizes that standardization was necessary before model outputs could be trusted.
+* It connects domain understanding and inspector collaboration to model validity.
+* It frames the lesson as practical: trustworthy ML depends on domain-grounded data work.
+
+## Final Answer
 
 The most important lesson I learned was that business value often comes from data quality and operationalization rather than sophisticated modeling alone. Before building predictive models, I spent significant time standardizing over a decade of inspection data. Without that foundation, the model outputs would not have been trustworthy, no matter how strong the algorithm was. The project reinforced that understanding the problem domain has to come before optimizing the model. For that reason, I spent a large amount of time learning the inspection process, reviewing how the data was collected, and collaborating with onsite inspectors. That domain knowledge helped me understand what the model was actually learning and gave me confidence that the outputs were meaningful rather than just statistically impressive.
 
 ---
 
-# Example 009
+# Example 007
 
 ## Category
 
-career
+interview
 
 ## Question
 
@@ -82,11 +184,11 @@ I still value directness, but I am learning that good communication is not only 
 
 ---
 
-# Example 011
+# Example 008
 
 ## Category
 
-career
+interview
 
 ## Question
 
@@ -114,11 +216,11 @@ The main lesson I took from that experience is that being right is not enough in
 
 ---
 
-# Example 013
+# Example 009
 
 ## Category
 
-career
+interview
 
 ## Question
 
@@ -144,11 +246,11 @@ For me, the important thing is to treat criticism as information. If the feedbac
 
 ---
 
-# Example 015
+# Example 010
 
 ## Category
 
-career
+interview
 
 ## Question
 
@@ -174,4 +276,3 @@ When it comes to helping others, I try to be thoughtful about it. I am always wi
 Overall, I try to be the kind of teammate who is reliable, communicative, honest, and focused on helping the team reach the goal.
 
 ---
-
