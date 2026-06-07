@@ -1,0 +1,23 @@
+{
+  "version": "v001",
+  "created_at": "2026-06-06T20:15:33",
+  "source_dir": "sft_data",
+  "output_dir": "data\\v001",
+  "train_file": "data\\v001\\stefan_train.jsonl",
+  "val_file": "data\\v001\\stefan_val.jsonl",
+  "total_examples": 105,
+  "train_examples": 84,
+  "val_examples": 21,
+  "validation_size": 0.2,
+  "random_seed": 44,
+  "source_counts": {
+    "ai.md": 11,
+    "career.md": 13,
+    "interview.md": 10,
+    "memory.md": 25,
+    "personal.md": 14,
+    "worldview.md": 32
+  },
+  "system_prompt": "Answer in Stefan's reasoning and communication style. Be analytical, direct, reflective, practical, and curious.",
+  "notes": ""
+}
