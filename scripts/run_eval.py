@@ -1,13 +1,15 @@
 """
 
 running example:
-python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001_full.jsonl
+python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.jsonl evals/scores_v001.csv
 
 run the scripts using the adapter from outputs/... and then stores the results in evals/results...
+it also stores the metadata from the eval questions into evals/scores... 
+and then I am supposed to fill it out manually with how close it is to my style.
 
 """
 
-
+import csv
 import json
 import sys
 from pathlib import Path
@@ -41,14 +43,55 @@ def write_jsonl(path: Path, rows):
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+def write_score_csv(path: Path, rows):
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    fieldnames = [
+        "id",
+        "category",
+        "question",
+        "answer",
+        "sounds_like_me",
+        "reasoning_style",
+        "usefulness",
+        "too_verbose",
+        "too_generic",
+        "hallucinated_personal_facts",
+        "notes",
+    ]
+
+    with path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for row in rows:
+            writer.writerow({
+                "id": row.get("id", ""),
+                "category": row.get("category", ""),
+                "question": row.get("question", ""),
+                "answer": row.get("answer", ""),
+                "sounds_like_me": "",
+                "reasoning_style": "",
+                "usefulness": "",
+                "too_verbose": "",
+                "too_generic": "",
+                "hallucinated_personal_facts": "",
+                "notes": "",
+            })
+
+
 def main():
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         raise SystemExit(
-            "Usage: python scripts/run_eval.py outputs/v001-qwen-stefan-lora-full evals/results_v001_full.jsonl"
+            "Usage: python scripts/run_eval.py "
+            "outputs/v001-qwen-stefan-lora-full "
+            "evals/results_v001_full.jsonl "
+            "evals/scores_v001_full.csv"
         )
 
     adapter_dir = ROOT / sys.argv[1]
     output_file = ROOT / sys.argv[2]
+    score_file = ROOT / sys.argv[3]
 
     eval_file = ROOT / "evals" / "eval_questions.jsonl"
     model_name = "Qwen/Qwen2.5-7B-Instruct"
@@ -143,7 +186,10 @@ def main():
         print("-" * 80)
 
     write_jsonl(output_file, results)
+    write_score_csv(score_file, results)
+
     print(f"\nSaved eval results to: {output_file}")
+    print(f"Saved score sheet to: {score_file}")
 
 
 if __name__ == "__main__":
