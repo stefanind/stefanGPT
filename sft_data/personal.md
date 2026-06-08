@@ -526,9 +526,3 @@ I tend to enjoy hobbies that involve skill, strategy, competition, or improvemen
 For games, I like things like League of Legends, Dota, and Teamfight Tactics because they involve strategy, decision-making, competition, and getting better over time. I usually enjoy activities more when there is depth to them and when improvement is possible.
 
 ---
-
-
-
-
-
-

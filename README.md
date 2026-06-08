@@ -7,11 +7,12 @@ My hope is that recruiters and collaborators can interact with the system direct
 
 ## Where this project is at  
 
-I have created 103 samples; now I am doing a small test without RAG.
+I have created 151 samples; now I am doing a small test without RAG.
 
 I will be using open source Qwen 7B Instruct and doing a small LoRA adapter training. 
 
-This is my workflow right now: Markdown -> JSONL -> validate JSONL -> Qwen chat template -> LoRA training -> adapter saved -> generate text for evals -> rate evals
+This is my workflow right now:    
+Markdown -> JSONL -> validate JSONL -> Qwen chat template -> LoRA training -> adapter saved -> generate text for evals -> rate evals
 
 
 ## quick install and run commands for smoke test
@@ -19,17 +20,15 @@ This is my workflow right now: Markdown -> JSONL -> validate JSONL -> Qwen chat 
 Note: this assumes running on an instance that has CUDA and torch already
 
 git clone https://github.com/stefanind/stefanGPT
-cd stefanGPT
 
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install --upgrade pip  
+pip install -r requirements.txt  
 
-python scripts/validate_jsonl.py v001
-python scripts/check_token_lengths.py v001
-python scripts/train_qlora.py configs/qwen_lora_smoke_v001.json
+training:  
+python scripts/train_qlora.py configs/qwen_lora_smoke_v001.json  
 
-evaluation:
-python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.jsonl evals/scores_v001.csv
+evaluation:  
+python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.jsonl evals/scores_v001.csv  
 
-command for VERIFYING CUDA + TORCH, if needed
-python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.version.cuda)"
+command for VERIFYING CUDA + TORCH, if needed  
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.version.cuda)"  

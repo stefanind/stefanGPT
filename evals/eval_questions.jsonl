@@ -1,60 +1,50 @@
-{"id":"eval_001","category":"ai","question":"What is the biggest misconception people have about AI?"}
-{"id":"eval_002","category":"ai","question":"Why does mechanistic interpretability matter?"}
-{"id":"eval_003","category":"ai","question":"What makes knowledge distillation interesting as a research problem?"}
-{"id":"eval_004","category":"ai","question":"How would you evaluate whether an AI system is actually improving?"}
-{"id":"eval_005","category":"ai","question":"Why is it dangerous to treat LLMs as magical?"}
-{"id":"eval_006","category":"ai","question":"What is the relationship between model capability and model understanding?"}
-{"id":"eval_007","category":"career","question":"What kind of technical work would keep you motivated over the long term?"}
-{"id":"eval_008","category":"career","question":"How do you decide whether a career path is worth committing to?"}
-{"id":"eval_009","category":"career","question":"What makes a technical project meaningful rather than just technically interesting?"}
-{"id":"eval_010","category":"career","question":"What kind of company or team would you want to work for?"}
-{"id":"eval_011","category":"career","question":"How should someone balance money, meaning, and growth when choosing a career?"}
-{"id":"eval_012","category":"career","question":"What makes you different from a typical AI or data science candidate?"}
-{"id":"eval_013","category":"worldview","question":"What does it mean to live a good life?"}
-{"id":"eval_014","category":"worldview","question":"What role does long-term commitment play in becoming excellent at something?"}
-{"id":"eval_015","category":"worldview","question":"How do you think about uncertainty when there is no clear answer?"}
-{"id":"eval_016","category":"worldview","question":"What do people misunderstand about intelligence?"}
-{"id":"eval_017","category":"worldview","question":"What is the difference between knowledge, intelligence, and wisdom?"}
-{"id":"eval_018","category":"worldview","question":"How do you decide whether a belief is worth holding strongly?"}
-{"id":"eval_019","category":"personal","question":"What do people often misunderstand about your directness?"}
-{"id":"eval_020","category":"personal","question":"What kinds of things make you feel most alive?"}
-{"id":"eval_021","category":"personal","question":"What kinds of things make you feel most at peace?"}
-{"id":"eval_022","category":"personal","question":"How do you respond when you are overwhelmed or under pressure?"}
-{"id":"eval_023","category":"personal","question":"What kinds of friendships do you value most?"}
-{"id":"eval_024","category":"personal","question":"What kind of partner or family member do you want to be?"}
-{"id":"eval_025","category":"interview","question":"Tell me about yourself in a way that connects your background to AI."}
-{"id":"eval_026","category":"interview","question":"Tell me about a time you had to work with someone who thought differently than you."}
-{"id":"eval_027","category":"interview","question":"What is your biggest weakness, and how are you working on it?"}
-{"id":"eval_028","category":"interview","question":"What accomplishment are you most proud of, and why?"}
-{"id":"eval_029","category":"interview","question":"Tell me about a setback that changed how you think."}
-{"id":"eval_030","category":"interview","question":"Why should a team trust you with difficult technical work?"}
-{"id":"eval_031","category":"ai","question":"How would you explain the difference between AI performance and AI understanding?"}
-{"id":"eval_032","category":"ai","question":"Why do you think internal representations matter for understanding neural networks?"}
-{"id":"eval_033","category":"ai","question":"What makes an AI research question worth pursuing?"}
-{"id":"eval_034","category":"ai","question":"How should someone think about the limits of benchmarks?"}
-{"id":"eval_035","category":"ai","question":"Why might a smaller model be more useful than a larger model in some situations?"}
-{"id":"eval_036","category":"ai","question":"What does building models from scratch teach you that using APIs does not?"}
-{"id":"eval_037","category":"career","question":"How do you think about choosing between research engineering, ML engineering, and data science?"}
-{"id":"eval_038","category":"career","question":"What kind of problems would make you excited to go deeper technically?"}
-{"id":"eval_039","category":"career","question":"How do you want to grow during your first few years in an AI role?"}
-{"id":"eval_040","category":"career","question":"What would make a job feel meaningless to you even if it paid well?"}
-{"id":"eval_041","category":"career","question":"How do you think about becoming valuable to a company over time?"}
-{"id":"eval_042","category":"career","question":"What kind of manager or mentor would help you do your best work?"}
-{"id":"eval_043","category":"worldview","question":"What does intellectual honesty mean to you?"}
-{"id":"eval_044","category":"worldview","question":"How do you decide when to change your mind?"}
-{"id":"eval_045","category":"worldview","question":"What is the relationship between discipline and freedom?"}
-{"id":"eval_046","category":"worldview","question":"Why do you think mastery requires humility?"}
-{"id":"eval_047","category":"worldview","question":"How do you think about suffering and growth?"}
-{"id":"eval_048","category":"worldview","question":"What does it mean to take responsibility for your life?"}
-{"id":"eval_049","category":"personal","question":"What motivates you when progress is slow?"}
-{"id":"eval_050","category":"personal","question":"What kinds of environments bring out the best in you?"}
-{"id":"eval_051","category":"personal","question":"How do you handle moments where you doubt your own ability?"}
-{"id":"eval_052","category":"personal","question":"What does loyalty mean to you?"}
-{"id":"eval_053","category":"personal","question":"How do you balance intensity with peace in your life?"}
-{"id":"eval_054","category":"personal","question":"What do you want people close to you to feel from you?"}
-{"id":"eval_055","category":"interview","question":"Describe a time when your perspective changed after receiving better evidence."}
-{"id":"eval_056","category":"interview","question":"Tell me about a project where the hard part was not the modeling itself."}
-{"id":"eval_057","category":"interview","question":"How would you explain your philosophy background to a technical hiring manager?"}
-{"id":"eval_058","category":"interview","question":"Tell me about a time you had to learn something difficult quickly."}
-{"id":"eval_059","category":"interview","question":"How do you approach disagreement on a technical team?"}
-{"id":"eval_060","category":"interview","question":"Why do you want to work on AI rather than a different technical field?"}
+{"id":"eval_001","category":"scenario","question":"You are working on a team project and realize the team is optimizing the wrong metric. How would you handle it?"}
+{"id":"eval_002","category":"scenario","question":"You disagree with a teammate who is emotionally invested in their solution. How would you approach the conversation?"}
+{"id":"eval_003","category":"scenario","question":"You are given a messy dataset and asked to build a model quickly. What would you do first?"}
+{"id":"eval_004","category":"scenario","question":"A manager wants a more complex model, but you think the data quality is the real issue. How would you explain that?"}
+{"id":"eval_005","category":"scenario","question":"You join a new AI team and feel behind everyone technically. How would you respond?"}
+{"id":"eval_006","category":"scenario","question":"You are asked to work on a project that is technically interesting but does not seem meaningful. How would you think through it?"}
+{"id":"eval_007","category":"scenario","question":"You receive criticism that your communication style is too direct. How would you process and respond to that feedback?"}
+{"id":"eval_008","category":"scenario","question":"You are trying to learn a difficult AI paper but keep getting stuck. What is your process?"}
+{"id":"eval_009","category":"scenario","question":"You discover that a model performs well on a benchmark but fails in a real-world setting. What would you investigate?"}
+{"id":"eval_010","category":"scenario","question":"You are choosing between a higher-paying job and a more meaningful technical role. How would you reason through the decision?"}
+{"id":"eval_011","category":"scenario","question":"A teammate challenges your idea with better evidence. What should your response be?"}
+{"id":"eval_012","category":"scenario","question":"You are leading a project where people are confused about the objective. How would you create clarity?"}
+{"id":"eval_013","category":"scenario","question":"You are asked to explain a complex technical idea to non-technical stakeholders. How would you approach it?"}
+{"id":"eval_014","category":"scenario","question":"You are overwhelmed by too many interests and possible career directions. How would you decide what to focus on?"}
+{"id":"eval_015","category":"scenario","question":"A project is failing because everyone is working hard but not together. What would you do?"}
+{"id":"eval_016","category":"scenario","question":"You are building a personal AI model and it starts sounding generic. What would you change?"}
+{"id":"eval_017","category":"scenario","question":"You are unsure whether your model is actually improving or just overfitting. How would you evaluate it?"}
+{"id":"eval_018","category":"scenario","question":"You have to choose between shipping something simple now or building something more sophisticated later. How would you decide?"}
+{"id":"eval_019","category":"scenario","question":"You are in a meeting where people are using the same word to mean different things. How would you intervene?"}
+{"id":"eval_020","category":"scenario","question":"You realize you were wrong about an important assumption in a project. What do you do next?"}
+{"id":"eval_021","category":"scenario","question":"You are trying to mentor someone who wants answers but does not seem willing to think through the problem. How would you handle it?"}
+{"id":"eval_022","category":"scenario","question":"You are under pressure to produce results quickly, but you do not trust the data. How would you balance speed and rigor?"}
+{"id":"eval_023","category":"scenario","question":"You are considering whether to spend months on a difficult research direction with uncertain payoff. How would you decide?"}
+{"id":"eval_024","category":"scenario","question":"You are asked to defend why your philosophy background matters in AI. What would you say?"}
+{"id":"eval_025","category":"scenario","question":"You are comparing two technical paths: one safer and one more ambitious. How would you think through the tradeoff?"}
+{"id":"eval_026","category":"worldview","question":"What does it mean for a life to be meaningful rather than merely comfortable?"}
+{"id":"eval_027","category":"worldview","question":"How do you distinguish between growth and achievement?"}
+{"id":"eval_028","category":"worldview","question":"What does responsibility mean to you?"}
+{"id":"eval_029","category":"worldview","question":"How should someone think about ambition without becoming consumed by it?"}
+{"id":"eval_030","category":"worldview","question":"What is the relationship between truth and usefulness?"}
+{"id":"eval_031","category":"worldview","question":"Why is clarity so important in thinking?"}
+{"id":"eval_032","category":"worldview","question":"How do you think about the tension between freedom and commitment?"}
+{"id":"eval_033","category":"worldview","question":"What does it mean to become the kind of person you respect?"}
+{"id":"eval_034","category":"worldview","question":"Why do you think people avoid confronting uncomfortable truths about themselves?"}
+{"id":"eval_035","category":"worldview","question":"What is the difference between being confident and protecting your ego?"}
+{"id":"eval_036","category":"worldview","question":"How do you think about discipline when motivation disappears?"}
+{"id":"eval_037","category":"worldview","question":"What makes a belief intellectually honest?"}
+{"id":"eval_038","category":"worldview","question":"Why does long-term commitment reveal more about a person than short-term intensity?"}
+{"id":"eval_039","category":"worldview","question":"What does it mean to live in alignment with yourself?"}
+{"id":"eval_040","category":"worldview","question":"How should someone decide what is worth sacrificing for?"}
+{"id":"eval_041","category":"ai","question":"What makes a model explanation trustworthy rather than merely plausible?"}
+{"id":"eval_042","category":"ai","question":"Why is interpretability different from simply observing model outputs?"}
+{"id":"eval_043","category":"career","question":"What kind of professional reputation do you want to build?"}
+{"id":"eval_044","category":"career","question":"How do you think about becoming excellent in a field where many people are already ahead of you?"}
+{"id":"eval_045","category":"personal","question":"What do you most want to preserve about yourself as you become more successful?"}
+{"id":"eval_046","category":"personal","question":"What kind of environment makes you feel grounded?"}
+{"id":"eval_047","category":"memory","question":"How have your past career changes shaped the way you evaluate new opportunities?"}
+{"id":"eval_048","category":"memory","question":"How did your experience with difficult training or competition shape your attitude toward pressure?"}
+{"id":"eval_049","category":"books","question":"What makes a book personally transformative rather than merely interesting?"}
+{"id":"eval_050","category":"books","question":"How do you decide whether an idea from a book is actually worth integrating into your life?"}
