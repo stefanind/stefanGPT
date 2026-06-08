@@ -10,7 +10,7 @@ My hope is that recruiters and collaborators can interact with the system direct
 Currently testing by building the app interface for my github.io pages so someone can talk to my AI twin.
 
 
-## quick install and run commands for smoke test
+## quick install and run commands
 
 Note: this assumes running on an instance that has CUDA and torch already
 
@@ -27,3 +27,4 @@ python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.json
 
 command for VERIFYING CUDA + TORCH, if needed  
 python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.version.cuda)"  
+
