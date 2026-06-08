@@ -31,11 +31,9 @@ MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-7B-Instruct")
 # This folder should contain files like:
 # adapter_model.safetensors
 # adapter_config.json
-ADAPTER_DIR = Path(
-    os.getenv(
-        "ADAPTER_DIR",
-        str(ROOT / "outputs" / "v001-qwen-stefan-lora"),
-    )
+ADAPTER_DIR = os.getenv(
+    "ADAPTER_DIR",
+    str(ROOT / "outputs" / "v001-qwen-stefan-lora"),
 )
 
 # The system prompt controls the model's general behavior.
@@ -110,6 +108,17 @@ class ChatResponse(BaseModel):
     adapter_dir: str
 
 
+
+def is_local_adapter_path(adapter_dir: str) -> bool:
+    adapter_path = Path(adapter_dir)
+
+    return (
+        adapter_dir.startswith("/")
+        or adapter_dir.startswith(".")
+        or adapter_dir.startswith("outputs")
+        or adapter_path.exists()
+    )
+
 # ---------------------------------------------------------------------
 # Model loading
 # ---------------------------------------------------------------------
@@ -133,7 +142,7 @@ def load_model_once():
         return
 
     # Make sure the LoRA adapter folder exists.
-    if not ADAPTER_DIR.exists():
+    if is_local_adapter_path(ADAPTER_DIR) and not Path(ADAPTER_DIR).exists():
         raise FileNotFoundError(f"Missing LoRA adapter directory: {ADAPTER_DIR}")
 
     print(f"Loading tokenizer from: {ADAPTER_DIR}")

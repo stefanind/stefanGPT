@@ -7,12 +7,7 @@ My hope is that recruiters and collaborators can interact with the system direct
 
 ## Where this project is at  
 
-I have created 151 samples; now I am doing a small test without RAG.
-
-I will be using open source Qwen 7B Instruct and doing a small LoRA adapter training. 
-
-This is my workflow right now:    
-Markdown -> JSONL -> validate JSONL -> Qwen chat template -> LoRA training -> adapter saved -> generate text for evals -> rate evals
+Currently testing by building the app interface for my github.io pages so someone can talk to my AI twin.
 
 
 ## quick install and run commands for smoke test
