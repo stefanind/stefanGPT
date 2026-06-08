@@ -130,7 +130,7 @@ def main():
         "gradient_accumulation_steps": config["gradient_accumulation_steps"],
         "learning_rate": config["learning_rate"],
         "warmup_steps": config["warmup_steps"],
-        "max_length": config["max_length"],
+        "max_seq_length": config["max_length"],
         "bf16": config["bf16"],
         "dataset_text_field": "text",
         "packing": config["packing"],
