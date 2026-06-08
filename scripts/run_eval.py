@@ -181,9 +181,23 @@ def main():
 
         results.append(result)
 
-        print(f"\n[{item.get('id')}] {question}")
-        print(answer[:500])
-        print("-" * 80)
+        idx = len(results)
+        total = len(eval_questions)
+
+        should_print = (
+            idx == 1 or
+            idx == total or
+            idx % 5 == 0
+        )
+
+        if should_print:
+            print("\n" + "=" * 80)
+            print(f"Completed {idx}/{total}: {item.get('id')} - {item.get('category')}")
+            print("\nQUESTION:")
+            print(question)
+            print("\nANSWER:")
+            print(answer)
+            print("=" * 80)
 
     write_jsonl(output_file, results)
     write_score_csv(score_file, results)
