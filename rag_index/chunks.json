@@ -1,0 +1,282 @@
+[
+  {
+    "source": "ai_paper_newsletter.md",
+    "chunk_id": 0,
+    "text": "# AI Paper Newsletter Project\n\n## Summary\nThe AI Paper Newsletter project is an automated research-newsletter pipeline that fetches recent AI and machine learning papers, filters and ranks them, generates summaries and deeper analysis, builds an HTML newsletter, and emails it to subscribers.\n\n## Key Facts\n- Project type: AI research newsletter / automated content pipeline\n- Main purpose: Send a weekly-style or recurring email summary of important AI/ML papers\n- Paper source: arXiv API\n- Default paper categories: cs.AI, cs.LG, cs.CL, cs.CV, cs.NE, cs.MA, cs.RO, cs.SE, cs.IR, and stat.ML\n- Topic queries include LLMs, agents, reasoning, multimodal models, alignment, interpretability, safety, attention, architecture, inference, and efficient training\n- Candidate filtering: Keyword scoring, recency scoring, category diversity, and deduplication\n- Model-assisted ranking: Uses an Anthropic mode"
+  },
+  {
+    "source": "ai_paper_newsletter.md",
+    "chunk_id": 1,
+    "text": "aining\n- Candidate filtering: Keyword scoring, recency scoring, category diversity, and deduplication\n- Model-assisted ranking: Uses an Anthropic model to select papers worth featuring\n- Summary generation: Creates short structured summaries and deeper analyses for standout papers\n- Newsletter output: Generates HTML newsletter files and LinkedIn post text\n- Email delivery: Sends HTML email through Gmail SMTP\n- Subscriber support: Includes subscribe and unsubscribe commands plus a simple signup app\n- Storage: Supports SQLite by default and Postgres when DATABASE_URL is configured\n- Deployment-related files: Includes Railway worker/web configuration files\n\n## My Role\n- Built the end-to-end paper discovery, ranking, summarization, and email pipeline\n- Implemented arXiv fetching, paper deduplication, keyword scoring, and candidate shortlisting\n- Used an LLM to rank papers and produce structu"
+  },
+  {
+    "source": "ai_paper_newsletter.md",
+    "chunk_id": 2,
+    "text": "peline\n- Implemented arXiv fetching, paper deduplication, keyword scoring, and candidate shortlisting\n- Used an LLM to rank papers and produce structured summaries\n- Added persistence for papers, newsletter runs, and subscribers\n- Created the email delivery flow and subscription interface\n- Designed the project to reduce the AI-paper flood into a smaller set of high-signal research updates\n\n## Technologies\n- Python\n- arXiv API\n- Anthropic API\n- SQLite\n- Postgres\n- Gmail SMTP\n- HTML email generation\n- WSGI simple server\n- Railway configuration\n\n## Safe Answer Guidance\nThe bot can say this project automates AI/ML paper discovery, ranking, summarization, newsletter generation, and email delivery. Do not claim the ranking is objectively authoritative, that every important paper is captured, or that the newsletter has a large subscriber base unless that is documented elsewhere."
+  },
+  {
+    "source": "ai_paper_newsletter.md",
+    "chunk_id": 3,
+    "text": "tative, that every important paper is captured, or that the newsletter has a large subscriber base unless that is documented elsewhere."
+  },
+  {
+    "source": "ai_research_interests.md",
+    "chunk_id": 0,
+    "text": "# AI Research Interests\n\n## Summary\nStefan is interested in AI research areas that improve understanding, evaluation, and deployment of modern machine learning systems, especially mechanistic interpretability, representation learning, model evaluation, and AI infrastructure.\n\n## Key Interests\n- Mechanistic interpretability\n- Representation learning\n- AI evaluation systems\n- LLM training and fine-tuning\n- Model internals\n- Efficient training and inference\n- AI infrastructure\n- Connections between AI, neuroscience, and psychology\n\n## Why These Areas Matter\nStefan is interested in these areas because he believes AI capability should be accompanied by understanding. As AI becomes more widely used, it becomes increasingly important to understand how models represent information, why they behave the way they do, and how to evaluate whether they are actually improving.\n\n## Relevant Background\n-"
+  },
+  {
+    "source": "ai_research_interests.md",
+    "chunk_id": 1,
+    "text": "how models represent information, why they behave the way they do, and how to evaluate whether they are actually improving.\n\n## Relevant Background\n- Rebuilt GPT-2 Small from scratch in PyTorch.\n- Studied LLM training, optimization, and inference improvements.\n- Explored knowledge distillation, model evaluation, and data priors.\n- Has a psychology interest that connects to questions about intelligence, behavior, and cognition.\n\n## Research Direction\nStefan is most interested in work that combines technical depth with explanatory value. He is especially drawn to research questions that ask not only whether a model performs well, but why it performs well and what mechanisms produce that behavior.\n\n## Safe Answer Guidance\nThe bot can say Stefan is interested in mechanistic interpretability, evaluation systems, representation learning, and AI infrastructure.\n\nThe bot should not claim Stefan"
+  },
+  {
+    "source": "ai_research_interests.md",
+    "chunk_id": 2,
+    "text": "an is interested in mechanistic interpretability, evaluation systems, representation learning, and AI infrastructure.\n\nThe bot should not claim Stefan is a published AI researcher unless another file explicitly supports that.\n\nThe bot should not claim Stefan has professional AI research experience beyond what is documented in the resume or project files."
+  },
+  {
+    "source": "beginner_ml_deployment.md",
+    "chunk_id": 0,
+    "text": "# Beginner ML Deployment Project\n\n## Summary\nThe Beginner ML Deployment project is a beginner friendly learning repository that shows how a machine learning model moves from notebook-style training into a small production oriented system. It walks through training a simple model, serving it with an API, tracking experiments, containerizing services, monitoring the app, generating load, orchestrating workflows, and adding automated checks.\n\n## Key Facts\n- Project type: ML deployment / MLOps learning repository\n- Main purpose: Teach the transition from model training to production-style ML systems\n- Target audience: People who understand basic machine learning but are new to deployment and operations\n- Starting point: A small scikit-learn classification model saved as a reusable artifact\n- API layer: FastAPI service with health, prediction, and metrics endpoints\n- Experiment tracking: MLfl"
+  },
+  {
+    "source": "beginner_ml_deployment.md",
+    "chunk_id": 1,
+    "text": "ssification model saved as a reusable artifact\n- API layer: FastAPI service with health, prediction, and metrics endpoints\n- Experiment tracking: MLflow for runs, metrics, artifacts, model registration, and deployment-style aliases\n- Containerization: Docker and Docker Compose for repeatable service execution\n- Monitoring: Prometheus scrapes application metrics\n- Load testing: Locust generates repeatable traffic against the API\n- Workflow orchestration: Prefect coordinates training and registration flows\n- CI: GitHub Actions adds automated repository checks\n- Scope: Intentionally small educational repo, not a full enterprise ML platform template\n\n## My Role\n- Designed the repository as a step-by-step learning path for ML deployment\n- Built the small model training workflow and artifact handoff\n- Created an API layer around the trained model\n- Added experiment tracking, containerization,"
+  },
+  {
+    "source": "beginner_ml_deployment.md",
+    "chunk_id": 2,
+    "text": "the small model training workflow and artifact handoff\n- Created an API layer around the trained model\n- Added experiment tracking, containerization, monitoring, load testing, orchestration, and CI examples\n- Structured the project to help beginners understand each production-oriented layer separately\n\n## Technologies\n- Python\n- scikit-learn\n- FastAPI\n- MLflow\n- Docker\n- Docker Compose\n- Prometheus\n- Locust\n- Prefect\n- GitHub Actions\n\n## Safe Answer Guidance\nThe bot can say this project teaches the core transition from training a model to serving, tracking, containerizing, monitoring, load testing, orchestrating, and validating an ML system. Do not describe it as an enterprise-grade production platform or claim it served real users at scale unless that is documented elsewhere."
+  },
+  {
+    "source": "beginner_ml_deployment.md",
+    "chunk_id": 3,
+    "text": "unless that is documented elsewhere."
+  },
+  {
+    "source": "books_read.md",
+    "chunk_id": 0,
+    "text": "# Books and Authors\n\n## Summary\nThis file lists books and authors that have influenced Stefan's thinking. It is used as factual RAG context when StefanGPT answers questions about Stefan's intellectual influences, worldview, tastes, and reading background.\n\n## Philosophy\n- Friedrich Nietzsche — Beyond Good and Evil\n- Friedrich Nietzsche — The Birth of Tragedy\n- Friedrich Nietzsche — Twilight of the Idols\n- Søren Kierkegaard — Either/Or\n- Søren Kierkegaard — The Sickness Unto Death\n- Søren Kierkegaard — Fear and Trembling\n- Arthur Schopenhauer - The World as Will and Representation I\n- Arthur Schopenhauer - The World as Will and Representation II\n- Albert Camus - The Myth of Sisyphus\n- Albert Camus - The Stranger\n- Wittgenstein - Tractatus Logico-Philosophicus\n- William James - Pragmatism and Other Writings\n- Immanuel Kant - The Critique of Pure Reason\n- Saint Augustine - Confessions\n\n## P"
+  },
+  {
+    "source": "books_read.md",
+    "chunk_id": 1,
+    "text": "gico-Philosophicus\n- William James - Pragmatism and Other Writings\n- Immanuel Kant - The Critique of Pure Reason\n- Saint Augustine - Confessions\n\n## Psychology\n- Carl Jung — Archetypes and the Collective Unconscious\n- Carl Jung — Symbols of Transformation\n- Carl Jung — Aion\n- Carl Jung — Two Essays on Analytical Psychology\n- Carl Jung — Civilization in Transition\n- Carl Jung — The Psychogenesis of Mental Disease\n- Carl Jung — Psychology and Alchemy\n- Carl Jung — Psychological Types\n- Carl Jung — The Psychogenesis of Mental Disease\n- Sigmund Freud - The Interpretation of Dreams\n- Rollo May - The Meaning of Anxiety\n- Jordan Peterson - Maps of Meaning\n- Other psychology texts and authors that shaped Stefan's thinking about human behavior, emotion, and personality.\n\n## Fantasy / Fiction\n- Patrick Rothfuss — The Name of the Wind\n- Scott Lynch — The Lies of Locke Lamora\n- Brandon Sanderson — T"
+  },
+  {
+    "source": "books_read.md",
+    "chunk_id": 2,
+    "text": "ion, and personality.\n\n## Fantasy / Fiction\n- Patrick Rothfuss — The Name of the Wind\n- Scott Lynch — The Lies of Locke Lamora\n- Brandon Sanderson — The Stormlight Archive\n- Chuck Palahniuk\n\n## Safe Answer Guidance\nThe bot can say these books and authors influenced Stefan only when there is an SFT entry explaining what Stefan took from them.\n\nThe bot should not claim Stefan agrees with everything an author wrote.\n\nThe bot should not quote long passages from books."
+  },
+  {
+    "source": "cuda_sgemm.md",
+    "chunk_id": 0,
+    "text": "# CUDA SGEMM Project\n\n## Summary\nThe CUDA SGEMM project implements and benchmarks progressively optimized single-precision matrix multiplication kernels to understand how GPU kernels become efficient.\n\n## Key Facts\n- Project type: CUDA systems / performance engineering project\n- Main task: SGEMM, or single-precision general matrix multiplication\n- Benchmark shape: M=N=K=4096, FP32\n- Benchmark GPU: NVIDIA GeForce RTX 4070\n- Baseline: cuBLAS using CUBLAS_DEFAULT_MATH\n- cuBLAS benchmark in the README: 6.23215 ms and 22,053.2 GFLOPs\n- Best custom kernel listed in the README: vec kernel at 14.1554 ms, 9,709.29 GFLOPs, and 44.0% of cuBLAS throughput\n- Kernels listed in the benchmark table include naive, coalesced, shared, 1d, 2d, and vec\n- Project status: unfinished\n- Future work listed in the README includes bank-conflict handling with swizzling/padding, autotuning, warp tiling, and additiona"
+  },
+  {
+    "source": "cuda_sgemm.md",
+    "chunk_id": 1,
+    "text": "t status: unfinished\n- Future work listed in the README includes bank-conflict handling with swizzling/padding, autotuning, warp tiling, and additional profiling\n\n## My Role\n- Implemented CUDA/C++ matrix multiplication kernels\n- Built a benchmark setup to compare custom kernels against cuBLAS\n- Measured runtime, throughput, and speedup across different kernel implementations\n- Used the project to understand GPU memory access, kernel efficiency, and matrix multiplication optimization\n- Continued iterating on more advanced CUDA optimization techniques\n\n## Technologies\n- CUDA\n- C++\n- CMake\n- cuBLAS\n- NVIDIA CUDA Toolkit\n- Python\n- Shell scripts\n\n## Safe Answer Guidance\nThe bot can say this project involved implementing and benchmarking CUDA SGEMM kernels against cuBLAS to learn GPU performance engineering. Do not claim the custom kernels beat cuBLAS. The README shows the best custom kernel"
+  },
+  {
+    "source": "cuda_sgemm.md",
+    "chunk_id": 2,
+    "text": "EMM kernels against cuBLAS to learn GPU performance engineering. Do not claim the custom kernels beat cuBLAS. The README shows the best custom kernel is still below cuBLAS performance. Do not claim the project is finished or production-grade."
+  },
+  {
+    "source": "gpt.md",
+    "chunk_id": 0,
+    "text": "# GPT Project\n\n## Summary\nThe GPT project is a from scratch educational language modeling project that began as a GPT-2 implementation and was extended with modern transformer architecture and training system features.\n\n## Key Facts\n- Project type: LLM architecture / training systems project\n- Original foundation: GPT-2 implementation inspired by Andrej Karpathy's Neural Networks: Zero to Hero material\n- Legacy dense baseline: validation loss of 3.1155 at step 19,072\n- Legacy dense baseline: best HellaSwag accuracy of 0.2934 at step 17,500\n- The legacy baseline did not include MoE, SwiGLU, RMSNorm, KV cache, or GQA/MQA\n- Current architecture additions include Mixture of Experts, KV cache, GQA/MQA, RMSNorm, and SwiGLU\n- Training/system additions include between-shard shuffling, PyTorch profiler experiments, torch.compile profiling, fused bias + GELU kernel work, FSDP for educational purpo"
+  },
+  {
+    "source": "gpt.md",
+    "chunk_id": 1,
+    "text": "ions include between-shard shuffling, PyTorch profiler experiments, torch.compile profiling, fused bias + GELU kernel work, FSDP for educational purposes, and RoPE\n- Training code supports DDP, gradient accumulation, bfloat16 autocast, TF32 matmul precision, AdamW, validation loss logging, checkpointing, sampling, and HellaSwag evaluation\n- Data paths in the code support tinyshakespeare for small experiments and FineWeb10B for larger training runs\n\n## My Role\n- Built and extended a GPT-style transformer implementation\n- Implemented modern transformer components such as MoE, KV cache, GQA/MQA, RMSNorm, SwiGLU, and RoPE\n- Wrote training/evaluation infrastructure for distributed training, gradient accumulation, validation, checkpointing, sampling, and HellaSwag evaluation\n- Profiled GPU utilization and compared underutilized, fully utilized, and torch.compile-optimized A100 training runs\n-"
+  },
+  {
+    "source": "gpt.md",
+    "chunk_id": 2,
+    "text": "ing, and HellaSwag evaluation\n- Profiled GPU utilization and compared underutilized, fully utilized, and torch.compile-optimized A100 training runs\n- Added educational systems work around kernel fusion and fused bias + GELU\n\n## Technologies\n- Python\n- PyTorch\n- CUDA\n- C++\n- tiktoken\n- DDP / torch.distributed\n- torch.profiler\n- HellaSwag\n- FineWeb10B\n- tinyshakespeare\n\n## Safe Answer Guidance\nThe bot can say this project demonstrates from-scratch LLM implementation, transformer architecture, distributed training, inference optimization, and GPU profiling. Do not claim the upgraded architecture completed a full successful training run unless that is documented elsewhere. Clearly distinguish the documented legacy dense baseline results from the newer architecture additions. Do not claim the model is state-of-the-art."
+  },
+  {
+    "source": "gpt.md",
+    "chunk_id": 3,
+    "text": "e newer architecture additions. Do not claim the model is state-of-the-art."
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 0,
+    "text": "# Life Timeline\n\n## Summary\nThis file contains a chronological overview of Stefan's formative life events, education, work history, and personal development. It is used as factual RAG context for StefanGPT.\n\n## Timeline\n### Early Life / Childhood\n- Grew up around instability, including drug use, crime, and family loss.\n- Developed a desire to build a different kind of life.\n- This period shaped an early interest in responsibility, discipline, and personal transformation.\n\n### Army / Infantry\n- Joined the army as an infantryman.\n- Gained structure, discipline, teamwork, accountability, and responsibility.\n- This experience helped build a stronger sense of competence and duty.\n\n### Injury and Transition\n- Left the army after an injury.\n- Entered a period of transition and self-redefinition.\n- Began searching for a meaningful long-term path.\n\n### Self-Education Period\n- Became intensely foc"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 1,
+    "text": "red a period of transition and self-redefinition.\n- Began searching for a meaningful long-term path.\n\n### Self-Education Period\n- Became intensely focused on learning after leaving the army.\n- Studied broadly across multiple domains to understand what kind of work and life path fit best.\n- Explored subjects including web development, mathematics, premed, economics, psychology, physics, and philosophy.\n\n### Wine Studies\n- Pursued advanced wine education.\n- Earned the second highest wine credential in the world.\n- This reflected a broader pattern of pursuing mastery when committed to a field.\n\n### Web Development / Technical Exploration\n- Studied web development as part of an early technical exploration period.\n- Began developing interest in software, technical systems, and building practical tools.\n- This helped create an early bridge toward later work in data science and AI.\n\n### Psychol"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 2,
+    "text": "software, technical systems, and building practical tools.\n- This helped create an early bridge toward later work in data science and AI.\n\n### Psychology / Premed / Economics / Math / Physics\n- Studied psychology, premed-related subjects, economics, mathematics, and physics during a broad exploratory learning period.\n- These subjects contributed to interests in human behavior, quantitative reasoning, scientific thinking, and complex systems.\n- This period helped clarify the kinds of intellectual problems that were most engaging.\n\n### Psychology and Carl Jung\n- Scholar of Jungian Psychology, having read 90% of all his work.\n- Jung has immensely influenced how I view the world.\n- I now tend to look at the world and interpret it psychologically.\n\n### Philosophy Degree\n- Earned a Bachelor of Arts in Philosophy with Distinction from the University of British Columbia.\n- Studied analytical phi"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 3,
+    "text": "y.\n\n### Philosophy Degree\n- Earned a Bachelor of Arts in Philosophy with Distinction from the University of British Columbia.\n- Studied analytical philosophy, philosophy of physics, philosophy of mathematics, logic, and reasoning.\n- Philosophy shaped a strong orientation toward clarity, definitions, argument structure, evidence, and conceptual precision.\n\n### Brazilian Jiu-Jitsu\n- Trained Brazilian Jiu-Jitsu for over a decade.\n- Earned a black belt.\n- Competed, dealt with injuries and losses, and developed as both an instructor and competitor.\n- This experience shaped views on mastery, persistence, humility, discipline, and long-term commitment.\n\n### Philosophical Development\n- Was set on writing a philosophical treatise because I implicitly believed that I could make ungrounded on the empirical world.\n- This realization turned me away from pure philosophy and towards data science becaus"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 4,
+    "text": "y believed that I could make ungrounded on the empirical world.\n- This realization turned me away from pure philosophy and towards data science because all decisions and claims are make based upon data, which is the empirical evidence. \n\n### Data Science Transition\n- Transitioned toward data science as a way to understand the world through empirical data.\n- Became interested in using data, statistics, and machine learning to test claims and solve real world problems.\n- This transition connected philosophy’s emphasis on reasoning with practical technical work.\n\n### Seattle University MS Data Science\n- Pursuing a Master of Science in Data Science at Seattle University, graduating June 2026.\n- Relevant coursework includes machine learning, advanced machine learning, numerical methods for machine learning, statistics, causal inference, big data analytics, programming.\n- Developed deeper tech"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 5,
+    "text": "anced machine learning, numerical methods for machine learning, statistics, causal inference, big data analytics, programming.\n- Developed deeper technical skills in Python, SQL, machine learning, modeling, and applied data science.\n\n### DataAnnotation\n- Worked remotely as a Data Analyst / AI evaluator from February 2023 to September 2024.\n- Analyzed frontier LLM response datasets across multiple task domains.\n- Designed and annotated Python, machine learning, software engineering, and statistics prompts/tasks for RLHF fine-tuning.\n- Audited other annotators’ work for correctness, instruction adherence, reasoning quality, and task alignment.\n\n### Tacoma Power\n- Worked on the Tacoma Power capstone project as a data scientist / machine learning engineer.\n- Built an end-to-end Python ML analytics pipeline for historical and incoming electrical pole inspection data.\n- Work included SharePoin"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 6,
+    "text": "ng engineer.\n- Built an end-to-end Python ML analytics pipeline for historical and incoming electrical pole inspection data.\n- Work included SharePoint ingestion, Excel parsing, data cleaning, schema standardization, NLP comment parsing, feature engineering, XGBoost modeling, SHAP explainability, Snowflake publishing, and Tableau reporting.\n- Helped identify pole top deterioration as the dominant driver of pole rejections.\n- Collaborated with inspectors, engineers, and management to validate assumptions and align outputs with operational needs.\n\n### AI / ML / Research Direction\n- Became increasingly focused on AI, machine learning, LLMs, evaluation, infrastructure, and AI research.\n- Rebuilt GPT-2 Small from scratch in PyTorch to understand how LLMs work internally.\n- Built ML deployment and infrastructure-oriented projects involving FastAPI, Docker, MLflow, Prometheus, Locust, Prefect,"
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 7,
+    "text": "how LLMs work internally.\n- Built ML deployment and infrastructure-oriented projects involving FastAPI, Docker, MLflow, Prometheus, Locust, Prefect, and GitHub Actions.\n- Developed strong interest in mechanistic interpretability, knowledge distillation, model evaluation, efficient training/inference, and AI systems.\n- Long-term direction is toward AI/ML engineering, research engineering, model evaluation, AI infrastructure, or applied AI research.\n\n## Safe Answer Guidance\nThe bot can reference these events as part of Stefan's background.\n\nThe bot should not invent dates, institutions, roles, credentials, or personal details not included in this file.\n\nThe bot should connect events to lessons only when those lessons are supported by SFT memory entries."
+  },
+  {
+    "source": "life_timeline.md",
+    "chunk_id": 8,
+    "text": "ory entries."
+  },
+  {
+    "source": "recruiter_faq.md",
+    "chunk_id": 0,
+    "text": "# Recruiter FAQ\n\n## Summary\nThis file contains recruiter-facing answers about Stefan's background, target roles, strengths, projects, and career interests.\n\n## What roles is Stefan looking for?\nStefan is targeting roles in AI/ML engineering, data science, applied machine learning, research engineering, ML systems, and model evaluation. He is especially interested in roles that combine machine learning, software engineering, model evaluation, and practical deployment.\n\n## What is Stefan's background?\nStefan has a nontraditional background that combines philosophy, data science, machine learning, and applied AI work. He is completing an M.S. in Data Science at Seattle University and previously earned a B.A. in Philosophy from the University of British Columbia. His work emphasizes careful reasoning, technical execution, model interpretability, and practical business value.\n\n## What are Ste"
+  },
+  {
+    "source": "recruiter_faq.md",
+    "chunk_id": 1,
+    "text": "f British Columbia. His work emphasizes careful reasoning, technical execution, model interpretability, and practical business value.\n\n## What are Stefan's strongest technical skills?\n- Python\n- PyTorch\n- SQL\n- Machine learning\n- Data cleaning and standardization\n- Model evaluation\n- Model interpretability\n- XGBoost\n- FastAPI\n- Docker\n- MLflow\n- Snowflake\n- Tableau\n- CUDA/C++ basics\n\n## What are Stefan's strongest projects?\n- Tacoma Power machine learning capstone\n- GPT-2 Small reproduction in PyTorch\n- Beginner ML Deployment System\n- CUDA SGEMM / systems-oriented learning projects\n\n## What makes Stefan different from other candidates?\nStefan combines analytical philosophy, machine learning, and practical data science experience. His philosophy background gives him a strong orientation toward reasoning, definitions, evidence, and conceptual clarity. His technical projects show that he ca"
+  },
+  {
+    "source": "recruiter_faq.md",
+    "chunk_id": 2,
+    "text": "ophy background gives him a strong orientation toward reasoning, definitions, evidence, and conceptual clarity. His technical projects show that he can move from theory into implementation, including modeling, deployment, interpretability, and infrastructure.\n\n## Why should a recruiter interview Stefan?\nA recruiter should interview Stefan if they are looking for someone who can reason carefully, learn quickly, communicate clearly, and work across both technical and business contexts. His Tacoma Power project shows applied data science impact, while his GPT and deployment projects show deeper interest in AI systems and model implementation.\n\n## What kind of work energizes Stefan?\nStefan is energized by work that involves understanding complex systems, building models or tools, evaluating whether systems actually work, and explaining technical results clearly. He is especially interested i"
+  },
+  {
+    "source": "recruiter_faq.md",
+    "chunk_id": 3,
+    "text": "x systems, building models or tools, evaluating whether systems actually work, and explaining technical results clearly. He is especially interested in AI systems, model evaluation, mechanistic understanding, and applied machine learning.\n\n## Safe Answer Guidance\nThe bot can answer recruiter questions using Stefan's resume, project files, and approved SFT examples.\n\nThe bot should not invent employment history, publications, credentials, or production deployments.\n\nThe bot should say it does not know if a question asks for information not included in the provided materials."
+  },
+  {
+    "source": "research_optimization_priors.md",
+    "chunk_id": 0,
+    "text": "# Research Optimization Priors Project\n\n## Summary\nThe research-optimization-priors project is independent research on whether teacher-derived or data-derived prior signals can help small language models learn or optimize more effectively.\n\n## Key Facts\n- Project type: independent machine learning research / language model optimization project\n- Main research question: what kinds of prior signals can help a small language model learn or optimize more effectively?\n- The project began as an exploration of OpenAI's Parameter Golf challenge\n- The repository continues to use the Parameter Golf-style train_gpt.py baseline, tokenizer workflow, and FineWeb data pipeline as a controlled experimental substrate\n- The project is not an official OpenAI project and is not affiliated with or endorsed by OpenAI\n- Baseline model setup includes 9 transformer layers, width 512, 8 attention heads, 4 KV head"
+  },
+  {
+    "source": "research_optimization_priors.md",
+    "chunk_id": 1,
+    "text": "project and is not affiliated with or endorsed by OpenAI\n- Baseline model setup includes 9 transformer layers, width 512, 8 attention heads, 4 KV heads, 1024-token SentencePiece vocabulary, tied embeddings, Muon for matrix parameters, Adam for embeddings/scalars, and a 10-minute comparison cap\n- Experiments 1-5 focus on data priors\n- Experiments 7-9 focus on teacher weight priors\n- Experiments 6 and 10-15 focus on teacher directional transforms, hidden geometry, embedding-anchor geometry, and logits\n- Example interventions include bigram prior logit injection, KL regularization, weight/subspace initialization, relational KD, activation embedding KL, big-teacher transformation KD, and classic logit distillation\n- Later diagnostic work examines teacher norm flow and tries to understand whether large transformation signals come from directional changes, residual stream scale growth, skip co"
+  },
+  {
+    "source": "research_optimization_priors.md",
+    "chunk_id": 2,
+    "text": "es teacher norm flow and tries to understand whether large transformation signals come from directional changes, residual stream scale growth, skip connections, attention updates, or MLP updates\n\n## My Role\n- Designed and implemented research experiments around optimization priors for small language models\n- Modified the baseline GPT training script to test one intervention at a time\n- Built data-prior experiments using token statistics such as bigram priors\n- Built teacher-assisted experiments involving hidden-state geometry, relational KD, transformation matching, and logit distillation\n- Added diagnostic work to interpret teacher signal scale and norm flow\n- Used controlled comparisons against a baseline training script to evaluate whether each added signal helped\n\n## Technologies\n- Python\n- PyTorch\n- NumPy\n- datasets\n- Hugging Face Hub\n- tiktoken\n- SentencePiece\n- FineWeb\n- Muon opti"
+  },
+  {
+    "source": "research_optimization_priors.md",
+    "chunk_id": 3,
+    "text": "er each added signal helped\n\n## Technologies\n- Python\n- PyTorch\n- NumPy\n- datasets\n- Hugging Face Hub\n- tiktoken\n- SentencePiece\n- FineWeb\n- Muon optimizer\n- Adam optimizer\n- Distributed training / DDP\n\n## Safe Answer Guidance\nThe bot can say this project explores data-derived and teacher-derived optimization priors for small transformer language models. Do not claim the project proves a general solution for faster LLM training. Do not claim affiliation with OpenAI. Be careful to describe the work as experimental research unless stronger results are documented elsewhere."
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 0,
+    "text": "# Stefan Indic Resume Facts\n\n## Summary\nStefan Indic is a Seattle-based data scientist and AI/ML engineer with a background in data science, machine learning, AI evaluation, ML deployment, and analytical philosophy. He is completing an M.S. in Data Science at Seattle University and has experience building ML analytics pipelines, researching Knowledge Distillation and Interpretability for AI, and developing AI/ML projects.\n\n## Key Facts\n- Name: Stefan Indic\n- Location: Seattle, WA\n- Website: stefanind.github.io\n- GitHub: stefanind\n- LinkedIn: in/stefanindic\n- Email: stefanindic@gmail.com\n- Current degree: Master of Science in Data Science, Seattle University\n- Expected graduation: June 2026\n- Prior degree: Bachelor of Arts in Philosophy with Distinction, University of British Columbia\n- Prior degree completion: May 2022\n- Current/recent role: Data Scientist, Seattle University Capstone wi"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 1,
+    "text": "Distinction, University of British Columbia\n- Prior degree completion: May 2022\n- Current/recent role: Data Scientist, Seattle University Capstone with Tacoma Power\n- Prior role: Data Analyst at DataAnnotation\n- Target profile: Data scientist / AI/ML engineer with experience in ML pipelines, LLM evaluation, model interpretability, and deployment.\n\n## Education\n- Master of Science, Data Science, Seattle University, Seattle, WA, expected June 2026.\n- Relevant M.S. coursework: ML I & II, Advanced ML, Numerical Methods for ML, Statistics, and Causal Inference.\n- Bachelor of Arts, Philosophy with Distinction, University of British Columbia, Vancouver, BC, completed May 2022.\n- Relevant B.A. coursework: Calculus III, Linear Algebra, Statistics, and Philosophy of Physics & Mathematics.\n\n## Technical Skills\n- Languages and tools: Python, SQL, CUDA/C++, R, Git, Linux, Docker, FastAPI, Excel.\n- D"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 2,
+    "text": "and Philosophy of Physics & Mathematics.\n\n## Technical Skills\n- Languages and tools: Python, SQL, CUDA/C++, R, Git, Linux, Docker, FastAPI, Excel.\n- Data science: Pandas, NumPy, SciPy, Matplotlib, Seaborn, Altair.\n- Machine learning: PyTorch, scikit-learn, NLP, MLflow, MLOps, Prefect.\n- Cloud and big data: AWS, Spark, Snowflake, Hadoop, Hive.\n\n## Experience\n\n### Data Scientist, Seattle University Capstone — Tacoma Power\n- Location: Seattle, WA\n- Dates: January 2026 to Present\n- Architected the first end-to-end reusable and automated Python ML analytics pipeline for Tacoma Power.\n- The pipeline identifies top causes of electrical pole rejections across historical and incoming inspection data.\n- The project supports infrastructure investment prioritization and future pole failure prevention.\n- Built a 10-stage workflow spanning automated SharePoint ingestion, Excel parsing, data cleaning,"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 3,
+    "text": "prioritization and future pole failure prevention.\n- Built a 10-stage workflow spanning automated SharePoint ingestion, Excel parsing, data cleaning, schema standardization, NLP comment parsing, feature engineering, XGBoost modeling, SHAP explainability, Snowflake publishing, and Tableau reporting.\n- Incorporated stage-level unit testing, validation, and logging into the pipeline.\n- Integrated LangGraph to translate failures into actionable AI-guided troubleshooting.\n- The LangGraph troubleshooting system enabled nontechnical users to resolve approximately 80% of recurring issues independently.\n- Validated data cleaning, standardization, and reporting assumptions through collaboration with onsite inspectors, engineers, and senior management.\n- Ensured the schema reflected field and engineering conditions.\n- Ensured model outputs aligned with dashboard reporting needs and operational prio"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 4,
+    "text": ".\n- Ensured the schema reflected field and engineering conditions.\n- Ensured model outputs aligned with dashboard reporting needs and operational priorities.\n- Revealed that 43% of pole rejections across the region stemmed from pole top deterioration caused by decay and bird damage.\n- Applied independent research-informed feature engineering to surface two operational findings: 11% of active poles required replacement under baseline national standards, and one manufacturer’s poles failed 19% more often due to weaker wood fiber strength.\n\n### Data Analyst — DataAnnotation\n- Location: Remote\n- Dates: February 2023 to September 2024\n- Analyzed 10+ frontier LLM response datasets across 7 task domains using NLP and statistical analysis.\n- Produced 5+ reports identifying chatbot performance patterns, model weaknesses, and findings such as Model A performing 13% worse than Model B across hypers"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 5,
+    "text": "ed 5+ reports identifying chatbot performance patterns, model weaknesses, and findings such as Model A performing 13% worse than Model B across hyperspecific instruction tasks.\n- Designed and annotated 1,000+ Python, machine learning, software engineering, and statistics prompts/tasks for Reinforcement Learning from Human Feedback fine-tuning.\n- Audited and validated other annotators’ work for correctness, instruction adherence, reasoning quality, and task alignment.\n- Found that approximately 20% of workers missed key task requirements on average.\n\n## Projects\n\n### ML Deployment System\n- GitHub: https://github.com/stefanind/beginner-ML-deployment\n- Dates: March 2026 to Present\n- Built a beginner-friendly ML deployment platform that teaches how to move beyond model training into production.\n- The project covers FastAPI inference, MLflow tracking, Docker containerization, Prometheus monit"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 6,
+    "text": "how to move beyond model training into production.\n- The project covers FastAPI inference, MLflow tracking, Docker containerization, Prometheus monitoring, Locust load testing, Prefect orchestration, and GitHub Actions CI.\n\n### General Purpose Transformer\n- GitHub: https://github.com/stefanind/GPT\n- Dates: August 2025 to Present\n- Rebuilt GPT-2 Small 124M from scratch in PyTorch to learn how LLMs work.\n- Extended the architecture with modern components including SwiGLU, RMSNorm, KV Cache, GQA/MQA, and Mixture of Experts.\n- Achieved 0.1770 lower validation loss with only a 0.0011 HellaSwag accuracy delta versus OpenAI GPT-2 Small.\n- Improved training throughput by 5x.\n- Reached 97% GPU utilization on A100s by profiling bottlenecks with PyTorch Profiler and optimizing bfloat16, TF32, FlashAttention, fused AdamW, batch sizing, and kernel fusion.\n\n## Recruiter-Relevant Positioning\nStefan ca"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 7,
+    "text": "rch Profiler and optimizing bfloat16, TF32, FlashAttention, fused AdamW, batch sizing, and kernel fusion.\n\n## Recruiter-Relevant Positioning\nStefan can be positioned as a data scientist and AI/ML engineer who combines applied ML engineering with strong analytical reasoning. His background includes building automated ML analytics pipelines, researching Knowledge Distillation and Mechanistic Intepretability, creating ML deployment systems, and rebuilding transformer architectures from scratch. His philosophy background supports his emphasis on clear reasoning, careful definitions, evidence, and interpretability.\n\n## Safe Answer Guidance\n- The bot can say Stefan is completing an M.S. in Data Science at Seattle University with expected graduation in June 2026.\n- The bot can say Stefan has a B.A. in Philosophy with Distinction from the University of British Columbia.\n- The bot can say Stefan"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 8,
+    "text": "on in June 2026.\n- The bot can say Stefan has a B.A. in Philosophy with Distinction from the University of British Columbia.\n- The bot can say Stefan worked as a Data Scientist on a Seattle University Capstone with Tacoma Power from January 2026 to Present.\n- The bot can say Stefan worked as a Data Analyst at DataAnnotation from February 2023 to September 2024.\n- The bot can say Stefan has experience with Python, SQL, CUDA/C++, PyTorch, scikit-learn, FastAPI, Docker, MLflow, Prefect, Snowflake, Spark, and AWS.\n- The bot can say Stefan built or worked on projects involving ML deployment and transformer architecture.\n- The bot can say the Tacoma Power project involved a 10-stage automated Python ML analytics pipeline with XGBoost, SHAP, Snowflake, and Tableau.\n- The bot can say the Tacoma Power project found that 43% of pole rejections across the region stemmed from pole top deterioration"
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 9,
+    "text": "lake, and Tableau.\n- The bot can say the Tacoma Power project found that 43% of pole rejections across the region stemmed from pole top deterioration caused by decay and bird damage.\n- The bot can say Stefan’s GPT project rebuilt GPT-2 Small 124M from scratch in PyTorch and improved throughput by 5x.\n- The bot should not claim Stefan was the sole owner of all Tacoma Power work unless another source explicitly supports that.\n- The bot should not claim actual cost savings were realized by Tacoma Power unless another source explicitly documents realized savings.\n- The bot should not invent additional employers, degrees, publications, certifications, awards, or model metrics not listed here.\n- The bot should not claim production deployment unless another source confirms deployment status."
+  },
+  {
+    "source": "resume.md",
+    "chunk_id": 10,
+    "text": "ss another source confirms deployment status."
+  },
+  {
+    "source": "tacoma_power.md",
+    "chunk_id": 0,
+    "text": "# Tacoma Power Project\n\n## Summary\nThe Tacoma Power project analyzed 10+ years of wood pole inspection data to identify the main drivers of pole replacement and turn historical inspection records into actionable business insights.\n\n## Key Facts\n- Project type: Machine learning / data science capstone\n- Organization: Tacoma Power\n- Main model: XGBoost\n- Main business question: What factors are driving pole replacement?\n- Main finding: Pole top condition was the dominant driver of pole replacement\n- 2025 holdout recall: 99.6%\n- Pole top deterioration accounted for roughly 43% of replacements\n\n## My Role\n- Cleaned and standardized historical inspection data\n- Helped transform messy Excel records into usable analytical datasets\n- Built machine learning models to predict pole rejection\n- Used SHAP/model interpretability to identify replacement drivers\n- Helped translate technical findings int"
+  },
+  {
+    "source": "tacoma_power.md",
+    "chunk_id": 1,
+    "text": "learning models to predict pole rejection\n- Used SHAP/model interpretability to identify replacement drivers\n- Helped translate technical findings into business recommendations\n\n## Technologies\n- Python\n- pandas\n- XGBoost\n- SHAP\n- Snowflake\n- Tableau/Streamlit\n- Excel data ingestion\n\n## Important Details\n- The project involved over a decade of inspection data\n- The analysis found that pole top condition was the strongest driver of replacement\n- A business example estimated that reducing pole replacements by 5% could save approximately $420,000 before treatment costs, assuming 840 replacements per year and $10,000 per replacement\n- The main recommendation was to prioritize pole top preservation because it had the highest business value\n\n## Safe Answer Guidance\nThe bot can say this project involved data cleaning, machine learning, interpretability, and business recommendations.\n\nThe bot ca"
+  },
+  {
+    "source": "tacoma_power.md",
+    "chunk_id": 2,
+    "text": "afe Answer Guidance\nThe bot can say this project involved data cleaning, machine learning, interpretability, and business recommendations.\n\nThe bot can say pole top condition was the dominant driver of replacement.\n\nThe bot should not claim actual cost savings were realized unless another file explicitly documents that.\n\nThe bot should not claim Stefan was the sole owner of the entire project unless another file supports that."
+  },
+  {
+    "source": "world_model_dreamerv3.md",
+    "chunk_id": 0,
+    "text": "# World Model DreamerV3 Project\n\n## Summary\nThe World Model DreamerV3 project is a from scratch PyTorch learning implementation of DreamerV3-style world model components. The project focuses on understanding model-based reinforcement learning by rebuilding core architecture pieces such as recurrent state modeling, image encoding, stochastic latent representations, and actor networks.\n\n## Key Facts\n- Project type: Reinforcement learning / world model learning implementation\n- Main goal: Rebuild DreamerV3 from scratch in PyTorch to understand world models\n- Status: Learning-oriented and currently paused according to the GitHub profile description\n- Main architecture focus: DreamerV3-style world model components\n- Core file: networks.py\n- Implemented component: RecurrentModel using a GRUCell to update deterministic hidden state from prior stochastic state and action\n- Implemented component:"
+  },
+  {
+    "source": "world_model_dreamerv3.md",
+    "chunk_id": 1,
+    "text": "emented component: RecurrentModel using a GRUCell to update deterministic hidden state from prior stochastic state and action\n- Implemented component: Encoder using convolutional layers to compress 64x64 image observations into a model-dimensional representation\n- Implemented component: Posterior network for stochastic latent representation with categorical latent variables and Gumbel-softmax sampling\n- Implemented component: Actor network that outputs a Gaussian action distribution, applies tanh squashing, and rescales actions to the environment action range\n- Repository language mix: Mostly Jupyter Notebook with a smaller Python component\n- Project framing: Rebuilding and studying the architecture rather than presenting a completed benchmarked RL agent\n\n## My Role\n- Rebuilt core DreamerV3-style model components in PyTorch for learning purposes\n- Implemented the recurrent deterministic"
+  },
+  {
+    "source": "world_model_dreamerv3.md",
+    "chunk_id": 2,
+    "text": "arked RL agent\n\n## My Role\n- Rebuilt core DreamerV3-style model components in PyTorch for learning purposes\n- Implemented the recurrent deterministic state model\n- Implemented image encoding for visual observations\n- Implemented stochastic posterior latent sampling with uniform mixing and Gumbel-softmax\n- Implemented an actor network for continuous action outputs\n- Used notebooks and Python modules to explore the architecture step by step\n\n## Technologies\n- Python\n- PyTorch\n- Jupyter Notebook\n- Neural networks\n- Convolutional encoders\n- GRUCell\n- Gumbel-softmax\n- Reinforcement learning\n- Model-based RL\n- World models\n\n## Safe Answer Guidance\nThe bot can say this project is a learning-oriented PyTorch rebuild of DreamerV3-style world model components. Do not claim it is a complete DreamerV3 implementation, that it reproduces the DreamerV3 paper results, or that it achieves benchmark perfo"
+  },
+  {
+    "source": "world_model_dreamerv3.md",
+    "chunk_id": 3,
+    "text": "omponents. Do not claim it is a complete DreamerV3 implementation, that it reproduces the DreamerV3 paper results, or that it achieves benchmark performance unless that is documented elsewhere."
+  }
+]

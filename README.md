@@ -1,4 +1,4 @@
-This repository is the beginning of a personal AI system designed to represent how I think, communicate, and work.
+This repository is a personal AI system designed to represent how I think, communicate, and work.
 
 The goal is to finetune an open model and combine it with RAG so it can reflect my reasoning style, project experience, technical background, and professional judgment.
 
@@ -7,8 +7,9 @@ My hope is that recruiters and collaborators can interact with the system direct
 
 ## Where this project is at  
 
-Currently testing by building the app interface for my github.io pages so someone can talk to my AI twin.
+v001 is currently deployed and operational on my github pages. Try it out: https://stefanind.github.io/
 
+Will concurrently add new data to improve where it lacks.
 
 ## quick install and run commands
 
@@ -18,6 +19,8 @@ git clone https://github.com/stefanind/stefanGPT
 
 pip install --upgrade pip  
 pip install -r requirements.txt  
+
+---
 
 training:  
 python scripts/train_qlora.py configs/qwen_lora_v001.json  
