@@ -9,7 +9,9 @@ My hope is that recruiters and collaborators can interact with the system direct
 
 v001 is currently deployed and operational on my github pages. Try it out: https://stefanind.github.io/
 
-Will concurrently add new data to improve where it lacks.
+For v002:  
+Will concurrently add new data to improve where it lacks.  
+I have to add more recruiter-facing data, such as info about my projects, my takes on them, and behavioral-style interview questions and answers.
 
 ## quick install and run commands
 
