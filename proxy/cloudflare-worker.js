@@ -1,9 +1,10 @@
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
       return handleCors();
     }
 
+    const startedAt = Date.now();
     const url = new URL(request.url);
 
     if (url.pathname !== "/chat") {
@@ -92,9 +93,47 @@ export default {
       );
     }
 
+    ctx.waitUntil(
+      logChat(env, {
+        message: message.trim(),
+        answer,
+        status: data.status,
+        latencyMs: Date.now() - startedAt,
+        maxNewTokens,
+        modelName: data.output?.model_name ?? "",
+        adapterDir: data.output?.adapter_dir ?? "",
+      })
+    );
+
     return jsonResponse({ answer }, 200);
   },
 };
+
+async function logChat(env, entry) {
+  if (!env.DB) {
+    return;
+  }
+
+  try {
+    await env.DB.prepare(
+      `INSERT INTO chat_logs
+       (id, created_at, message, answer, status, latency_ms, max_new_tokens, model_name, adapter_dir)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    ).bind(
+      crypto.randomUUID(),
+      new Date().toISOString(),
+      entry.message,
+      entry.answer,
+      entry.status,
+      entry.latencyMs,
+      entry.maxNewTokens,
+      entry.modelName,
+      entry.adapterDir
+    ).run();
+  } catch (error) {
+    console.error("Failed to log chat", error);
+  }
+}
 
 function handleCors() {
   return new Response(null, {
