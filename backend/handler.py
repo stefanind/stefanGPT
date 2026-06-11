@@ -6,7 +6,7 @@ import torch
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-from backend.rag import retrieve_context
+from backend.rag import build_rag_messages
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -74,28 +74,7 @@ def generate_answer(
 ) -> str:
     load_model_once()
 
-    retrieved_context = retrieve_context(message, top_k=4)
-
-    messages = [
-        {
-            "role": "system",
-            "content": (
-                SYSTEM_PROMPT
-                + "\n\nUse the retrieved context when it is relevant. "
-                + "Do not invent personal facts that are not supported by the context. "
-                + "If the retrieved context does not answer the question, say what you can answer from general reasoning."
-            ),
-        },
-        {
-            "role": "user",
-            "content": (
-                "Retrieved context:\n"
-                f"{retrieved_context}\n\n"
-                "User question:\n"
-                f"{message.strip()}"
-            ),
-        },
-    ]
+    messages = build_rag_messages(message, SYSTEM_PROMPT, top_k=4)
 
     prompt = tokenizer.apply_chat_template(
         messages,

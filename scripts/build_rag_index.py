@@ -14,7 +14,6 @@ OUT_DIR = ROOT / "rag_index"
 EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 CHUNK_SIZE = 900
-CHUNK_OVERLAP = 150
 
 
 def clean_text(text: str) -> str:
@@ -22,20 +21,95 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
-def chunk_text(text: str, chunk_size: int, overlap: int):
-    text = clean_text(text)
+def split_long_block(text: str, max_chars: int):
+    pieces = []
+    current = []
+    current_len = 0
 
+    for line in text.splitlines():
+        extra_len = len(line) + (1 if current else 0)
+
+        if current and current_len + extra_len > max_chars:
+            pieces.append("\n".join(current).strip())
+            current = [line]
+            current_len = len(line)
+        else:
+            current.append(line)
+            current_len += extra_len
+
+    if current:
+        pieces.append("\n".join(current).strip())
+
+    return pieces
+
+
+def split_text(text: str, max_chars: int):
     chunks = []
-    start = 0
+    current = ""
 
-    while start < len(text):
-        end = start + chunk_size
-        chunk = text[start:end].strip()
+    for paragraph in re.split(r"\n\s*\n", text):
+        paragraph = paragraph.strip()
+        if not paragraph:
+            continue
 
-        if chunk:
-            chunks.append(chunk)
+        if len(paragraph) > max_chars:
+            if current:
+                chunks.append(current)
+                current = ""
 
-        start += chunk_size - overlap
+            chunks.extend(split_long_block(paragraph, max_chars))
+            continue
+
+        candidate = paragraph if not current else f"{current}\n\n{paragraph}"
+
+        if len(candidate) <= max_chars:
+            current = candidate
+        else:
+            chunks.append(current)
+            current = paragraph
+
+    if current:
+        chunks.append(current)
+
+    return chunks
+
+
+def chunk_markdown(text: str, max_chars: int):
+    text = clean_text(text)
+    chunks = []
+    headings = []
+    section_lines = []
+
+    def flush_section():
+        nonempty = [line for line in section_lines if line.strip()]
+        if not nonempty:
+            return
+
+        if len(nonempty) == 1 and nonempty[0].startswith("#"):
+            return
+
+        heading = " > ".join(headings)
+        section_text = "\n".join(section_lines).strip()
+
+        for chunk in split_text(section_text, max_chars):
+            chunks.append({
+                "heading": heading,
+                "text": chunk,
+            })
+
+    for line in text.splitlines():
+        match = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
+
+        if match:
+            flush_section()
+            level = len(match.group(1))
+            title = match.group(2).strip()
+            headings = headings[:level - 1] + [title]
+            section_lines = [line]
+        else:
+            section_lines.append(line)
+
+    flush_section()
 
     return chunks
 
@@ -50,13 +124,14 @@ def main():
 
     for md_path in sorted(RAG_DIR.glob("*.md")):
         text = md_path.read_text(encoding="utf-8")
-        chunks = chunk_text(text, CHUNK_SIZE, CHUNK_OVERLAP)
+        chunks = chunk_markdown(text, CHUNK_SIZE)
 
         for i, chunk in enumerate(chunks):
             docs.append({
                 "source": md_path.name,
                 "chunk_id": i,
-                "text": chunk,
+                "heading": chunk["heading"],
+                "text": chunk["text"],
             })
 
     if not docs:
@@ -89,8 +164,8 @@ def main():
 
     manifest = {
         "embedding_model": EMBED_MODEL_NAME,
-        "chunk_size": CHUNK_SIZE,
-        "chunk_overlap": CHUNK_OVERLAP,
+        "chunking": "markdown_sections",
+        "chunk_max_chars": CHUNK_SIZE,
         "num_chunks": len(docs),
         "source_dir": str(RAG_DIR.relative_to(ROOT)),
     }

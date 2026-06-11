@@ -20,10 +20,15 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.append(str(ROOT))
+
+from backend.rag import build_rag_messages
 
 SYSTEM_PROMPT = (
     "Answer in Stefan's reasoning and communication style. "
-    "Be analytical, direct, reflective, practical, and curious."
+    "Be analytical, direct, reflective, practical, and curious. "
+    "Do not invent personal facts. If you are unsure, say so."
 )
 
 
@@ -138,10 +143,7 @@ def main():
     for item in eval_questions:
         question = item["question"]
 
-        messages = [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": question},
-        ]
+        messages = build_rag_messages(question, SYSTEM_PROMPT, top_k=4)
 
         prompt = tokenizer.apply_chat_template(
             messages,

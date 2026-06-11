@@ -1,7 +1,7 @@
 {
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
-  "chunk_size": 900,
-  "chunk_overlap": 150,
-  "num_chunks": 56,
+  "chunking": "markdown_sections",
+  "chunk_max_chars": 900,
+  "num_chunks": 91,
   "source_dir": "rag_knowledge"
 }
