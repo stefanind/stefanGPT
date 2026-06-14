@@ -1,28 +1,16 @@
-import os
-from pathlib import Path
-
 import runpod
 import torch
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-from backend.rag import build_rag_messages
-
-ROOT = Path(__file__).resolve().parents[1]
-
-MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-7B-Instruct")
-ADAPTER_DIR = os.getenv("ADAPTER_DIR", "stefanind/qwen-stefan-lora-v001")
-
-SYSTEM_PROMPT = os.getenv(
-    "SYSTEM_PROMPT",
-    (
-        "Answer in Stefan's reasoning and communication style. "
-        "Be analytical, direct, reflective, practical, and curious. "
-        "Do not invent personal facts. If you are unsure, say so."
-    ),
+from backend.config import (
+    ADAPTER_DIR,
+    DEFAULT_MAX_NEW_TOKENS,
+    DEPLOYMENT_ENV,
+    MODEL_NAME,
+    SYSTEM_PROMPT,
 )
-
-DEFAULT_MAX_NEW_TOKENS = int(os.getenv("MAX_NEW_TOKENS", "350"))
+from backend.rag import build_rag_messages
 
 model = None
 tokenizer = None
@@ -161,6 +149,7 @@ def handler(event):
             "answer": answer,
             "model_name": MODEL_NAME,
             "adapter_dir": ADAPTER_DIR,
+            "deployment_env": DEPLOYMENT_ENV,
         }
 
     except Exception as e:

@@ -10,46 +10,18 @@ from peft import PeftModel
 from pydantic import BaseModel, Field
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
+from backend.config import (
+    ADAPTER_DIR,
+    DEFAULT_MAX_NEW_TOKENS,
+    DEPLOYMENT_ENV,
+    MODEL_NAME,
+    SYSTEM_PROMPT,
+)
+
 
 # ---------------------------------------------------------------------
 # Project paths and configurable settings
 # ---------------------------------------------------------------------
-
-# ROOT points to the root of your repo.
-# If this file is backend/app.py, then parents[1] is the project root.
-ROOT = Path(__file__).resolve().parents[1]
-
-# Base model from Hugging Face.
-# You can override this when launching the server with:
-# MODEL_NAME="..." uvicorn backend.app:app --host 0.0.0.0 --port 8000
-MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-7B-Instruct")
-
-# Folder containing your trained LoRA adapter.
-# Default:
-# outputs/v001-qwen-stefan-lora/
-#
-# This folder should contain files like:
-# adapter_model.safetensors
-# adapter_config.json
-ADAPTER_DIR = os.getenv(
-    "ADAPTER_DIR",
-    str(ROOT / "outputs" / "v001-qwen-stefan-lora"),
-)
-
-# The system prompt controls the model's general behavior.
-# This is prepended to every chat request.
-SYSTEM_PROMPT = os.getenv(
-    "SYSTEM_PROMPT",
-    (
-        "Answer in Stefan's reasoning and communication style. "
-        "Be analytical, direct, reflective, practical, and curious. "
-        "Do not invent personal facts. If you are unsure, say so."
-    ),
-)
-
-# Default generation length.
-# The frontend can override this per request if needed.
-DEFAULT_MAX_NEW_TOKENS = int(os.getenv("MAX_NEW_TOKENS", "350"))
 
 
 # ---------------------------------------------------------------------
@@ -266,6 +238,7 @@ def health():
         "model_loaded": model is not None,
         "model_name": MODEL_NAME,
         "adapter_dir": str(ADAPTER_DIR),
+        "deployment_env": DEPLOYMENT_ENV,
     }
 
 

@@ -6,8 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV HF_HOME=/app/.cache/huggingface
 
-ENV MODEL_NAME=Qwen/Qwen2.5-7B-Instruct
-ENV ADAPTER_DIR=stefanind/qwen-stefan-lora-v001
+ENV DEPLOYMENT_ENV=production
 ENV MAX_NEW_TOKENS=350
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -23,6 +22,7 @@ RUN pip install --upgrade pip && \
 
 
 COPY backend/ backend/
+COPY deployment/ deployment/
 COPY rag_index/ rag_index/
 
 CMD ["python", "-m", "backend.handler"]

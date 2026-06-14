@@ -34,6 +34,21 @@ def read_docker_env(name: str) -> str:
     raise ValueError(f"Missing {prefix} in Dockerfile")
 
 
+def docker_defines_env(name: str) -> bool:
+    prefix = f"ENV {name}="
+
+    return any(
+        line.startswith(prefix)
+        for line in DOCKERFILE.read_text(encoding="utf-8").splitlines()
+    )
+
+
+def docker_copies_path(path: str) -> bool:
+    expected = f"COPY {path}/ {path}/"
+
+    return expected in DOCKERFILE.read_text(encoding="utf-8").splitlines()
+
+
 def validate_manifest(path: Path, expected_environment: str) -> dict:
     manifest = load_json(path)
     missing = sorted(REQUIRED_FIELDS - manifest.keys())
@@ -80,7 +95,7 @@ def validate_manifest(path: Path, expected_environment: str) -> dict:
 
 
 def main() -> None:
-    production = validate_manifest(
+    validate_manifest(
         DEPLOYMENT_DIR / "production_model.json",
         "production",
     )
@@ -90,20 +105,22 @@ def main() -> None:
         "staging",
     )
 
-    docker_model = read_docker_env("MODEL_NAME")
-    docker_adapter = read_docker_env("ADAPTER_DIR")
-
-    if docker_model != production["base_model"]:
+    deployment_env = read_docker_env("DEPLOYMENT_ENV")
+    if deployment_env != "production":
         raise ValueError(
-            "Dockerfile MODEL_NAME must match production_model.json base_model "
-            f"({docker_model!r} != {production['base_model']!r})"
+            "Dockerfile DEPLOYMENT_ENV must default to production "
+            f"({deployment_env!r})"
         )
 
-    if docker_adapter != production["adapter_uri"]:
-        raise ValueError(
-            "Dockerfile ADAPTER_DIR must match production_model.json adapter_uri "
-            f"({docker_adapter!r} != {production['adapter_uri']!r})"
-        )
+    for name in ("MODEL_NAME", "ADAPTER_DIR"):
+        if docker_defines_env(name):
+            raise ValueError(
+                f"Dockerfile should not define {name}; "
+                "backend/config.py reads model settings from deployment manifests"
+            )
+
+    if not docker_copies_path("deployment"):
+        raise ValueError("Dockerfile must copy deployment/ into the image")
 
     print("Deployment manifests valid OK")
 
