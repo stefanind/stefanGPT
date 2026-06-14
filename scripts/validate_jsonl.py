@@ -58,7 +58,7 @@ def validate_file(path: Path) -> None:
             print(f"...and {len(errors) - 20} more")
         raise SystemExit(1)
 
-    print("Valid ✅")
+    print("Valid OK")
 
 
 def main():
