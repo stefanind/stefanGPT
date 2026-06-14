@@ -37,16 +37,5 @@ jobs:
             fi
           done
 
-      - name: Check deployment adapter is explicit
-        run: |
-          adapter="$(grep -E '^ENV ADAPTER_DIR=' Dockerfile | sed 's/^ENV ADAPTER_DIR=//')"
-          echo "Dockerfile ADAPTER_DIR=$adapter"
-
-          case "$adapter" in
-            stefanind/qwen-stefan-lora-v[0-9][0-9][0-9])
-              ;;
-            *)
-              echo "::error::ADAPTER_DIR must be an explicit versioned adapter like stefanind/qwen-stefan-lora-v001"
-              exit 1
-              ;;
-          esac
+      - name: Validate deployment manifests
+        run: python scripts/validate_deployment_manifests.py
