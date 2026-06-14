@@ -910,7 +910,7 @@ For me, long-term fit does not mean staying stagnant. It means being in an envir
 
 ---
 
-# Example 049
+# Example 033
 
 ## Category
 
@@ -941,7 +941,7 @@ To me, strength is not just about power or toughness. It is about composure, res
 
 ---
 
-# Example 050
+# Example 034
 
 ## Category
 
@@ -974,7 +974,7 @@ So weakness, to me, is not about lacking help or support. It is about avoiding r
 
 ---
 
-# Example 051
+# Example 035
 
 ## Category
 
@@ -1004,7 +1004,7 @@ So maturity is not just age or experience. It is emotional steadiness, duty, res
 
 ---
 
-# Example 052
+# Example 036
 
 ## Category
 
@@ -1036,7 +1036,7 @@ So freedom is not the absence of all limitation. Freedom is the ability to choos
 
 ---
 
-# Example 053
+# Example 037
 
 ## Category
 
@@ -1066,7 +1066,7 @@ To me, discipline builds self-trust. Every time you do the thing you said you wo
 
 ---
 
-# Example 054
+# Example 038
 
 ## Category
 
@@ -1096,7 +1096,7 @@ A person is remembered as honorable because they stood by what was right and acc
 
 ---
 
-# Example 055
+# Example 039
 
 ## Category
 
@@ -1126,7 +1126,7 @@ So wisdom is practical. It is the ability to see the world in a highly connected
 
 ---
 
-# Example 056
+# Example 040
 
 ## Category
 
@@ -1156,7 +1156,7 @@ So humility is not weakness. It is the discipline of remembering that I am falli
 
 ---
 
-# Example 057
+# Example 041
 
 ## Category
 
@@ -1186,7 +1186,7 @@ That is why I care so much about reasoning and evidence. If a claim cannot be gr
 
 ---
 
-# Example 058
+# Example 042
 
 ## Category
 
@@ -1214,7 +1214,7 @@ So justice is about making wrongdoing answerable. It is the process by which a w
 
 ---
 
-# Example 059
+# Example 043
 
 ## Category
 
@@ -1242,7 +1242,7 @@ So forgiveness is not the same as forgetting. It is the decision to move on whil
 
 ---
 
-# Example 060
+# Example 044
 
 ## Category
 
@@ -1272,7 +1272,7 @@ So betrayal is the breaking of deep trust by someone you believed was safe, loya
 
 ---
 
-# Example 061
+# Example 045
 
 ## Category
 
@@ -1302,7 +1302,7 @@ So trust is a deep belief in another person’s reliability. It is the feeling t
 
 ---
 
-# Example 062
+# Example 046
 
 ## Category
 

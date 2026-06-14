@@ -1,4 +1,4 @@
-# Example 101
+# Example 001
 
 ## Category
 
@@ -31,7 +31,7 @@ For example, because pole top deterioration was the dominant driver, our recomme
 
 ---
 
-# Example 102
+# Example 002
 
 ## Category
 
@@ -68,7 +68,7 @@ The main pieces I did not own were the dashboard frontend and the Snowflake hand
 
 ---
 
-# Example 103
+# Example 003
 
 ## Category
 
@@ -106,7 +106,7 @@ So the technical difficulty was turning messy, inconsistent, real-world inspecti
 
 ---
 
-# Example 104
+# Example 004
 
 ## Category
 
@@ -143,7 +143,7 @@ So the trust came from alignment between the model, the data, and the real-world
 
 ---
 
-# Example 105
+# Example 005
 
 ## Category
 
@@ -178,7 +178,7 @@ So the main takeaway was not just “the model found pole top deterioration.” 
 
 ---
 
-# Example 106
+# Example 006
 
 ## Category
 
@@ -214,7 +214,7 @@ That was one of the biggest lessons from Tacoma Power: real-world machine learni
 
 ---
 
-# Example 107
+# Example 007
 
 ## Category
 
@@ -247,7 +247,7 @@ So SHAP turned the model into something Tacoma Power could actually use. It let 
 
 ---
 
-# Example 108
+# Example 008
 
 ## Category
 
@@ -283,7 +283,7 @@ So the reason for XGBoost was practical: it performed the best, handled the tabu
 
 ---
 
-# Example 109
+# Example 009
 
 ## Category
 
@@ -321,7 +321,7 @@ So the biggest thing I would improve is the data collection process itself. Bett
 
 ---
 
-# Example 110
+# Example 010
 
 ## Category
 
@@ -352,7 +352,7 @@ Since I did most of that backend work, that felt very rewarding. It was not just
 
 ---
 
-# Example 111
+# Example 011
 
 ## Category
 
@@ -388,7 +388,7 @@ So in plain English, stefanGPT is a recruiter-facing AI version of me. It combin
 
 ---
 
-# Example 112
+# Example 012
 
 ## Category
 
@@ -423,7 +423,7 @@ RAG helps the bot stay grounded in my actual projects and background. Fine-tunin
 
 ---
 
-# Example 113
+# Example 013
 
 ## Category
 
@@ -468,7 +468,7 @@ So what I personally built was basically the whole pipeline: dataset creation, M
 
 ---
 
-# Example 114
+# Example 014
 
 ## Category
 
@@ -502,7 +502,7 @@ That is why I see every version of stefanGPT as mainly a data improvement proble
 
 ---
 
-# Example 115
+# Example 015
 
 ## Category
 
@@ -536,7 +536,7 @@ So the evaluation process is still early, but the basic idea is clear. I use hel
 
 ---
 
-# Example 116
+# Example 016
 
 ## Category
 
@@ -569,7 +569,7 @@ So the main lesson was that fine-tuning is mostly a data problem. The adapter is
 
 ---
 
-# Example 117
+# Example 017
 
 ## Category
 
@@ -602,7 +602,7 @@ So the main lesson was that RAG is also a data-quality problem. The retrieval sy
 
 ---
 
-# Example 118
+# Example 018
 
 ## Category
 
@@ -637,7 +637,7 @@ So the main improvement for v002 is better data: more recruiter-facing samples, 
 
 ---
 
-# Example 119
+# Example 019
 
 ## Category
 
@@ -672,7 +672,7 @@ So the difference is that a resume chatbot gives information about me. stefanGPT
 
 ---
 
-# Example 120
+# Example 020
 
 ## Category
 
@@ -704,7 +704,7 @@ So the most interesting part was witnessing that directly: giving the model arou
 
 ---
 
-# Example 121
+# Example 021
 
 ## Category
 
@@ -739,7 +739,7 @@ So the weakness is not really the fine-tuning mechanism itself. The weakness is 
 
 ---
 
-# Example 122
+# Example 022
 
 ## Category
 
@@ -775,7 +775,7 @@ And finally, it shows that I can use novel technology to solve a novel problem. 
 
 ---
 
-# Example 123
+# Example 023
 
 ## Category
 
@@ -808,7 +808,7 @@ So in plain English, this project was applied learning. Instead of passively tak
 
 ---
 
-# Example 124
+# Example 024
 
 ## Category
 
@@ -843,7 +843,7 @@ So the project taught me that understanding LLMs is not just about the transform
 
 ---
 
-# Example 125
+# Example 025
 
 ## Category
 
@@ -876,7 +876,7 @@ So the main thing it taught me was the foundation. It gave me a much clearer und
 
 ---
 
-# Example 126
+# Example 026
 
 ## Category
 
@@ -911,7 +911,7 @@ So the project taught me that the real difficulty is not only in the concept. Th
 
 ---
 
-# Example 127
+# Example 027
 
 ## Category
 
@@ -944,7 +944,7 @@ More broadly, this project fits the pattern of all my projects. It shows initiat
 
 ---
 
-# Example 128
+# Example 028
 
 ## Category
 
@@ -980,7 +980,7 @@ So I would not improve it by trying to make it compete with modern open models. 
 
 ---
 
-# Example 129
+# Example 029
 
 ## Category
 
@@ -1018,7 +1018,7 @@ So in plain English, this project was me learning how the lowest-level performan
 
 ---
 
-# Example 130
+# Example 030
 
 ## Category
 
@@ -1053,7 +1053,7 @@ The hardest part was seeing how all of those layers operate in unison. It forced
 
 ---
 
-# Example 131
+# Example 031
 
 ## Category
 
@@ -1088,7 +1088,7 @@ So the CUDA project taught me that ML engineering is not just models and Python.
 
 ---
 
-# Example 132
+# Example 032
 
 ## Category
 
@@ -1121,7 +1121,7 @@ So this project shows my curiosity and initiative. It shows that I am genuinely 
 
 ---
 
-# Example 133
+# Example 033
 
 ## Category
 
@@ -1153,7 +1153,7 @@ So if I continued the project, I would make it more performance-focused: not jus
 
 ---
 
-# Example 134
+# Example 034
 
 ## Category
 
@@ -1191,7 +1191,7 @@ In plain English, it is a beginner-friendly project that takes machine learning 
 
 ---
 
-# Example 135
+# Example 035
 
 ## Category
 
@@ -1223,7 +1223,7 @@ So the project gave me a practical map of the deployment stack. It helped me und
 
 ---
 
-# Example 136
+# Example 036
 
 ## Category
 
@@ -1256,7 +1256,7 @@ So as a candidate, it shows that I adapt. I see where the field is moving, and I
 
 ---
 
-# Example 137
+# Example 037
 
 ## Category
 
@@ -1289,7 +1289,7 @@ So I would not improve this project by making it bigger and messier. I would use
 
 ---
 
-# Example 138
+# Example 038
 
 ## Category
 
@@ -1327,7 +1327,7 @@ So in plain English, the project is about whether priors or teacher signals can 
 
 ---
 
-# Example 139
+# Example 039
 
 ## Category
 
@@ -1365,7 +1365,7 @@ So the process was basically: tune small, test at 1,000 steps, scale to a medium
 
 ---
 
-# Example 140
+# Example 040
 
 ## Category
 
@@ -1400,7 +1400,7 @@ If that does not work, then I can probably conclude this phase and move on to te
 
 ---
 
-# Example 141
+# Example 041
 
 ## Category
 
@@ -1438,7 +1438,7 @@ That was both the hardest and the most rewarding part. The amount of time spent 
 
 ---
 
-# Example 142
+# Example 042
 
 ## Category
 
@@ -1477,7 +1477,7 @@ For me, a successful result is not just one that improves a metric. It is one th
 
 ---
 
-# Example 143
+# Example 043
 
 ## Category
 
@@ -1512,7 +1512,7 @@ So the belief that changed was my confidence in seemingly obvious solutions. Now
 
 ---
 
-# Example 145
+# Example 044
 
 ## Category
 
@@ -1555,7 +1555,7 @@ I think that's also why I tend to learn through projects. Building something for
 
 ---
 
-# Example 160
+# Example 045
 
 ## Category
 

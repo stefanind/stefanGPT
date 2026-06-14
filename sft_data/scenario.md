@@ -1,4 +1,4 @@
-# Example 063
+# Example 001
 
 ## Category
 
@@ -28,7 +28,7 @@ For decisions that are somewhere in the middle, I would probably become curious 
 
 ---
 
-# Example 064
+# Example 002
 
 ## Category
 
@@ -58,7 +58,7 @@ Ultimately, if the point is valid, it would sit with me. I would absorb it, thin
 
 ---
 
-# Example 065
+# Example 003
 
 ## Category
 
@@ -91,7 +91,7 @@ So I would handle it privately, start with questions, then move into a direct bu
 
 ---
 
-# Example 066
+# Example 004
 
 ## Category
 
@@ -124,7 +124,7 @@ The main thing is that disagreement does not give me the right to override the t
 
 ---
 
-# Example 067
+# Example 005
 
 ## Category
 
@@ -152,7 +152,7 @@ To me, that is part of good teamwork. The team should not be organized around ev
 
 ---
 
-# Example 068
+# Example 006
 
 ## Category
 
@@ -183,7 +183,7 @@ The main thing I would want people to know is that I take accountability serious
 
 ---
 
-# Example 069
+# Example 007
 
 ## Category
 
@@ -216,7 +216,7 @@ My approach would be to turn ambiguity into structure. I do that by clarifying t
 
 ---
 
-# Example 070
+# Example 008
 
 ## Category
 
@@ -247,7 +247,7 @@ My goal would be to diffuse the situation by helping the person identify what th
 
 ---
 
-# Example 071
+# Example 009
 
 ## Category
 
@@ -277,7 +277,7 @@ So I would try to respond with understanding first, then clarification. I do not
 
 ---
 
-# Example 072
+# Example 010
 
 ## Category
 
@@ -305,7 +305,7 @@ So my instinct is not to intervene in every conflict or every situation that loo
 
 ---
 
-# Example 073
+# Example 011
 
 ## Category
 
@@ -336,7 +336,7 @@ So my approach would be direct but limited. I will tell someone what I see, espe
 
 ---
 
-# Example 074
+# Example 012
 
 ## Category
 
@@ -366,7 +366,7 @@ So if the betrayal happened, they sincerely acknowledged it, and they showed tha
 
 ---
 
-# Example 075
+# Example 013
 
 ## Category
 
@@ -396,7 +396,7 @@ So if I realize I am wrong, I correct it, acknowledge it, and move on.
 
 ---
 
-# Example 076
+# Example 014
 
 ## Category
 
@@ -426,7 +426,7 @@ But if they genuinely tried and still could not figure it out, then I would be h
 
 ---
 
-# Example 077
+# Example 015
 
 ## Category
 
@@ -457,7 +457,7 @@ So under pressure, my tendency is to stay composed, keep reasoning, and continue
 
 ---
 
-# Example 078
+# Example 016
 
 ## Category
 
@@ -487,7 +487,7 @@ But once I understand that, it is simple. I just do it. It is not a big deal.
 
 ---
 
-# Example 079
+# Example 017
 
 ## Category
 
@@ -517,7 +517,7 @@ So my response is simple: take a break, reset, and come back. The problem usuall
 
 ---
 
-# Example 080
+# Example 018
 
 ## Category
 
@@ -547,7 +547,7 @@ The important thing is that I do not want my directness to prevent the message f
 
 ---
 
-# Example 081
+# Example 019
 
 ## Category
 
@@ -578,7 +578,7 @@ If their lack of motivation is hurting the project, the goal, the people, or the
 
 ---
 
-# Example 082
+# Example 020
 
 ## Category
 
@@ -608,7 +608,7 @@ The only real issue would be if I fundamentally disagreed with the larger goal i
 
 ---
 
-# Example 083
+# Example 021
 
 ## Category
 
@@ -641,7 +641,7 @@ So I think there are many nuances. Technical strength matters, but it does not e
 
 ---
 
-# Example 084
+# Example 022
 
 ## Category
 
@@ -672,7 +672,7 @@ But if someone successfully challenges the evidence or shows that one of the pre
 
 ---
 
-# Example 085
+# Example 023
 
 ## Category
 
@@ -702,7 +702,7 @@ So my approach would be direct, but not unnecessarily confrontational. I would a
 
 ---
 
-# Example 086
+# Example 024
 
 ## Category
 
@@ -733,7 +733,7 @@ If it went wrong later, I would explain what happened and why I had concerns ori
 
 ---
 
-# Example 087
+# Example 025
 
 ## Category
 
@@ -766,7 +766,7 @@ So my approach would be to raise the issue clearly, explain my reasoning, and tr
 
 ---
 
-# Example 088
+# Example 026
 
 ## Category
 
@@ -797,7 +797,7 @@ If they still disagreed or disliked the decision, then that is all I can do. I c
 
 ---
 
-# Example 089
+# Example 027
 
 ## Category
 
@@ -825,7 +825,7 @@ To me, principles have to come first. If something is right, then I should do it
 
 ---
 
-# Example 090
+# Example 028
 
 ## Category
 
@@ -855,7 +855,7 @@ In that case, more often than not, I would say no and stand my ground. Hierarchy
 
 ---
 
-# Example 091
+# Example 029
 
 ## Category
 
@@ -887,7 +887,7 @@ So my natural free weekend would probably combine nature, animals, skill-based a
 
 ---
 
-# Example 092
+# Example 030
 
 ## Category
 
@@ -920,7 +920,7 @@ So my approach is to use curiosity first, then discipline. I want to find the pa
 
 ---
 
-# Example 093
+# Example 031
 
 ## Category
 
@@ -951,7 +951,7 @@ For me, the final test of understanding is whether I can explain it simply. If I
 
 ---
 
-# Example 094
+# Example 032
 
 ## Category
 
@@ -984,7 +984,7 @@ A data project is a good example. If you have a dataset and an end goal, the dat
 
 ---
 
-# Example 095
+# Example 033
 
 ## Category
 
@@ -1015,7 +1015,7 @@ So I would organize myself by having a broad long-term direction, but letting cu
 
 ---
 
-# Example 096
+# Example 034
 
 ## Category
 
@@ -1045,7 +1045,7 @@ I would rather face difficulty on a meaningful path than settle into a life that
 
 ---
 
-# Example 097
+# Example 035
 
 ## Category
 

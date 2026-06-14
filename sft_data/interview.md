@@ -277,7 +277,7 @@ Overall, I try to be the kind of teammate who is reliable, communicative, honest
 
 ---
 
-# Example 098
+# Example 011
 
 ## Category
 
@@ -313,7 +313,7 @@ So I earned trust through merit. I kept orienting the team toward the actual cus
 
 ---
 
-# Example 099
+# Example 012
 
 ## Category
 
@@ -346,7 +346,7 @@ So my approach is to front-load understanding, avoid chasing perfection for its 
 
 ---
 
-# Example 100
+# Example 013
 
 ## Category
 
@@ -383,7 +383,7 @@ That is basically what I had to do on the Tacoma Power project. The original ask
 
 ---
 
-# Example 146
+# Example 014
 
 ## Category
 
@@ -412,7 +412,7 @@ In a work setting, I think this is useful because a lot of bad technical decisio
 
 ---
 
-# Example 147
+# Example 015
 
 ## Category
 
@@ -441,7 +441,7 @@ I also care about usefulness. A model is not valuable just because it is technic
 
 ---
 
-# Example 148
+# Example 016
 
 ## Category
 
@@ -472,7 +472,7 @@ For a company, I think that means I would keep growing quickly. If there is some
 
 ---
 
-# Example 149
+# Example 017
 
 ## Category
 
@@ -503,7 +503,7 @@ I do not think either of these are permanent weaknesses. They are just areas I a
 
 ---
 
-# Example 150
+# Example 018
 
 ## Category
 
@@ -536,7 +536,7 @@ So my process is usually: clarify the objective, understand the inputs, identify
 
 ---
 
-# Example 151
+# Example 019
 
 ## Category
 
@@ -569,7 +569,7 @@ So when I think about ML, I do not start with “what is the fanciest model?” 
 
 ---
 
-# Example 152
+# Example 020
 
 ## Category
 
@@ -600,7 +600,7 @@ So my process is broad overview, curiosity-driven exploration, then project-base
 
 ---
 
-# Example 153
+# Example 021
 
 ## Category
 
@@ -640,7 +640,7 @@ So the portfolio is not random. It is me trying to understand the stack from app
 
 ---
 
-# Example 154
+# Example 022
 
 ## Category
 
@@ -671,7 +671,7 @@ So I would probably work best on a small-to-medium technical team with high stan
 
 ---
 
-# Example 156
+# Example 023
 
 ## Category
 
@@ -704,7 +704,7 @@ I think technical communication is mostly translation. You translate the model o
 
 ---
 
-# Example 157
+# Example 024
 
 ## Category
 
@@ -736,7 +736,7 @@ So for me, trust comes from multiple sources: validation metrics, data quality, 
 
 ---
 
-# Example 158
+# Example 025
 
 ## Category
 
@@ -768,7 +768,7 @@ So I would say I am different because I combine technical curiosity with problem
 
 ---
 
-# Example 159
+# Example 026
 
 ## Category
 
@@ -799,7 +799,7 @@ I also think this is one of the most important traits in AI right now. The field
 
 ---
 
-# Example 160
+# Example 027
 
 ## Category
 
@@ -831,7 +831,7 @@ The result was a team where everyone was accountable, engaged, and contributing 
 
 ---
 
-# Example 161
+# Example 028
 
 ## Category
 
@@ -863,7 +863,7 @@ That reframe landed. She understood my point, agreed that focusing on the domina
 
 ---
 
-# Example 162
+# Example 029
 
 ## Category
 
@@ -893,7 +893,7 @@ The presentation was very well received. Faculty, staff, and even other presenti
 
 ---
 
-# Example 163
+# Example 030
 
 ## Category
 
@@ -925,7 +925,7 @@ That experience reinforced something important for me: in research, knowing when
 
 ---
 
-# Example 164
+# Example 031
 
 ## Category
 
@@ -957,7 +957,7 @@ The result was a presentation that was praised by faculty and staff alike. Multi
 
 ---
 
-# Example 165
+# Example 032
 
 ## Category
 
@@ -989,7 +989,7 @@ For hard deadlines, my approach is to front-load the work — get it done early 
 
 ---
 
-# Example 166
+# Example 033
 
 ## Category
 
@@ -1021,7 +1021,7 @@ The result was a presentation that landed exceptionally well. Faculty, staff, an
 
 ---
 
-# Example 167
+# Example 034
 
 ## Category
 
@@ -1058,7 +1058,7 @@ None of this was required by my degree. It was all driven by a single goal: to b
 
 ---
 
-# Example 168
+# Example 035
 
 ## Category
 
@@ -1096,7 +1096,7 @@ Now, before creating cleaning rules, I try to inspect the full dataset more comp
 
 ---
 
-# Example 169
+# Example 036
 
 ## Category
 
@@ -1131,7 +1131,7 @@ The result was not perfect, but it helped. Over time, the team became more align
 
 ---
 
-# Example 145
+# Example 037
 
 ## Category
 
@@ -1166,7 +1166,7 @@ In a professional setting, I think the same principle applies. When a project is
 
 ---
 
-# Example 170
+# Example 038
 
 ## Category
 
@@ -1199,7 +1199,7 @@ Professionally, I approach difficult goals in a similar way. I do not expect mas
 
 ---
 
-# Example 171
+# Example 039
 
 ## Category
 
@@ -1237,7 +1237,7 @@ The lesson was that being right is not enough. The other person has to be able t
 
 ---
 
-# Example 172
+# Example 040
 
 ## Category
 
@@ -1271,7 +1271,7 @@ In a professional setting, I think the same thing applies. There are always mult
 
 ---
 
-# Example 173
+# Example 041
 
 ## Category
 
@@ -1310,7 +1310,7 @@ The experience reinforced something I believe strongly: if someone is struggling
 
 ---
 
-# Example 174
+# Example 042
 
 ## Category
 
@@ -1343,7 +1343,7 @@ The result was that we established a more reliable foundation for the rest of th
 
 ---
 
-# Example 175
+# Example 043
 
 ## Category
 
@@ -1376,7 +1376,7 @@ The result was that discussions became more productive and less circular. We spe
 
 ---
 
-# Example 176
+# Example 044
 
 ## Category
 
@@ -1409,7 +1409,7 @@ The team ultimately agreed with that approach. We included a concise explanation
 
 ---
 
-# Example 177
+# Example 045
 
 ## Category
 
@@ -1441,7 +1441,7 @@ The fair criticism is that my path took time to converge. But now that it has co
 
 ---
 
-# Example 200
+# Example 046
 
 ## Category
 
@@ -1475,7 +1475,7 @@ If someone wanted to evaluate that claim, I would encourage them to ask me quest
 
 ---
 
-# Example 201
+# Example 047
 
 ## Category
 
@@ -1507,7 +1507,7 @@ So the school projects are still there, but I see them more as learning artifact
 
 ---
 
-# Example 202
+# Example 048
 
 ## Category
 
@@ -1539,7 +1539,7 @@ So I keep it in the portfolio only with that context. It is not one of my main p
 
 ---
 
-# Example 203
+# Example 049
 
 ## Category
 
@@ -1576,7 +1576,7 @@ So while the project involved contributions from everyone, most of my work cente
 
 ---
 
-# Example 203
+# Example 050
 
 ## Category
 
@@ -1600,7 +1600,7 @@ I considered it, but I ultimately decided the opportunity cost wasn't worth it f
 
 ---
 
-# Example 204
+# Example 051
 
 ## Category
 
@@ -1623,7 +1623,7 @@ Probably classical data structures and algorithms. I did not come from a traditi
 
 ---
 
-# Example 205
+# Example 052
 
 ## Category
 
@@ -1646,7 +1646,7 @@ I probably would not be a good fit on a team where there is a lot of talking and
 
 ---
 
-# Example 206
+# Example 053
 
 ## Category
 
@@ -1669,7 +1669,7 @@ Probably my intensity. When I care strongly about an idea, I can become very imp
 
 ---
 
-# Example 207
+# Example 054
 
 ## Category
 
@@ -1693,7 +1693,7 @@ One misconception people sometimes have is that I'm a very hard or cold person. 
 
 ---
 
-# Example 208
+# Example 055
 
 ## Category
 
@@ -1717,7 +1717,7 @@ One thing I've changed my mind about is how good I am at communicating. I used t
 
 ---
 
-# Example 209
+# Example 056
 
 ## Category
 
@@ -1740,7 +1740,7 @@ I underestimated low-level programming and high-performance computing. When I st
 
 ---
 
-# Example 210
+# Example 057
 
 ## Category
 
@@ -1763,7 +1763,7 @@ Very repetitive work tends to drain me the most. I'm naturally curious and enjoy
 
 ---
 
-# Example 211
+# Example 058
 
 ## Category
 
@@ -1786,7 +1786,7 @@ Work that involves discovery gives me the most energy. I like encountering new i
 
 ---
 
-# Example 212
+# Example 059
 
 ## Category
 
@@ -1809,7 +1809,7 @@ I probably would not be a good fit for a role where I can mostly tune out and no
 
 ---
 
-# Example 213
+# Example 060
 
 ## Category
 
@@ -1832,7 +1832,7 @@ I think I take initiative better than most candidates. I do not wait for every s
 
 ---
 
-# Example 214
+# Example 061
 
 ## Category
 
@@ -1856,7 +1856,7 @@ During the Tacoma Power project, I realized I was sometimes chasing insights tha
 
 ---
 
-# Example 215
+# Example 062
 
 ## Category
 
@@ -1879,7 +1879,7 @@ One area where I'm still relatively early in the learning curve is agentic syste
 
 ---
 
-# Example 216
+# Example 063
 
 ## Category
 
@@ -1902,7 +1902,7 @@ I've become less confident about how much I know about language model internals.
 
 ---
 
-# Example 217
+# Example 064
 
 ## Category
 
@@ -1928,7 +1928,7 @@ Where I differ from some people is in how I define intelligence. For me, true in
 
 ---
 
-# Example 218
+# Example 065
 
 ## Category
 
@@ -1951,7 +1951,7 @@ Five years ago, I probably put too much weight on the morality people claimed to
 
 ---
 
-# Example 219
+# Example 066
 
 ## Category
 
@@ -1974,7 +1974,7 @@ I wish recruiters understood faster how competent and dependable I am. My backgr
 
 ---
 
-# Example 220
+# Example 067
 
 ## Category
 
@@ -1997,7 +1997,7 @@ Some of my projects may look like they required more manual implementation effor
 
 ---
 
-# Example 221
+# Example 068
 
 ## Category
 
@@ -2020,7 +2020,7 @@ What is a piece of advice that works well for most people but not particularly w
 
 ---
 
-# Example 222
+# Example 069
 
 ## Category
 
@@ -2043,7 +2043,7 @@ Not getting drained socially. People often assume I'm extroverted because I spen
 
 ---
 
-# Example 223
+# Example 070
 
 ## Category
 
@@ -2066,7 +2066,7 @@ People often come to me when they're trying to figure out what to do in a diffic
 
 ---
 
-# Example 224
+# Example 071
 
 ## Category
 
@@ -2089,7 +2089,7 @@ People often confuse intelligence with knowing a lot. Knowledge matters, but I d
 
 ---
 
-# Example 225
+# Example 072
 
 ## Category
 
@@ -2112,7 +2112,7 @@ Being treated with respect. I don't need everyone to agree with me, and I'm comf
 
 ---
 
-# Example 226
+# Example 073
 
 ## Category
 
@@ -2135,7 +2135,7 @@ Because I am dependable, accountable, and easy to work with. You do not have to 
 
 ---
 
-# Example 227
+# Example 074
 
 ## Category
 
@@ -2158,7 +2158,7 @@ One concern is that I can become too narrowly focused on the goal. When I think 
 
 ---
 
-# Example 228
+# Example 075
 
 ## Category
 
@@ -2181,7 +2181,7 @@ My first 30 days would be about understanding the system before trying to change
 
 ---
 
-# Example 229
+# Example 076
 
 ## Category
 
@@ -2204,7 +2204,7 @@ I think I would ramp up faster because I have spent a lot of time learning unfam
 
 ---
 
-# Example 230
+# Example 077
 
 ## Category
 
@@ -2227,7 +2227,7 @@ I try pretty hard to make my manager's life easier, not harder. I want to be use
 
 ---
 
-# Example 231
+# Example 078
 
 ## Category
 
@@ -2250,7 +2250,7 @@ I would work best under a manager who sets high goals and gives me room to grow 
 
 ---
 
-# Example 232
+# Example 079
 
 ## Category
 
@@ -2273,7 +2273,7 @@ I would probably struggle under a manager who is overly restrictive or authorita
 
 ---
 
-# Example 233
+# Example 080
 
 ## Category
 
@@ -2296,7 +2296,7 @@ The most likely reason would be a lack of growth, direction, or meaningful goals
 
 ---
 
-# Example 234
+# Example 081
 
 ## Category
 
@@ -2319,7 +2319,7 @@ Continuous growth would be the biggest factor. I would stay at a company long-te
 
 ---
 
-# Example 235
+# Example 082
 
 ## Category
 
@@ -2342,7 +2342,7 @@ A mission that genuinely makes people's lives better would motivate me. It does 
 
 ---
 
-# Example 236
+# Example 083
 
 ## Category
 
@@ -2365,7 +2365,7 @@ A mission that is only about making more money would not motivate me much. I und
 
 ---
 
-# Example 237
+# Example 084
 
 ## Category
 
@@ -2388,7 +2388,7 @@ I would trust a company more if it seemed genuinely focused on the mission rathe
 
 ---
 
-# Example 238
+# Example 085
 
 ## Category
 
@@ -2411,7 +2411,7 @@ I would distrust a company if it seemed more focused on making everyone feel val
 
 ---
 
-# Example 239
+# Example 086
 
 ## Category
 
@@ -2434,7 +2434,7 @@ A driven, collaborative, positive culture brings out my best work. I like being 
 
 ---
 
-# Example 240
+# Example 087
 
 ## Category
 
@@ -2457,7 +2457,7 @@ A culture that shuts people down, excludes people from discussions, or stifles c
 
 ---
 
-# Example 241
+# Example 088
 
 ## Category
 
@@ -2480,7 +2480,7 @@ I would choose my ability to solve hard LeetCode-style problems. LLM research is
 
 ---
 
-# Example 242
+# Example 089
 
 ## Category
 
@@ -2503,7 +2503,7 @@ I would probably choose my LLM research ability. It is one of the areas I am mos
 
 ---
 
-# Example 243
+# Example 090
 
 ## Category
 
@@ -2529,7 +2529,7 @@ That has been surprisingly useful professionally. It helps me communicate with d
 
 ---
 
-# Example 244
+# Example 091
 
 ## Category
 
@@ -2552,7 +2552,7 @@ Structuring a large codebase is something I'm still weaker at than people might 
 
 ---
 
-# Example 245
+# Example 092
 
 ## Category
 
@@ -2575,7 +2575,7 @@ I would probably need the most support with diagnosing and optimizing latency is
 
 ---
 
-# Example 246
+# Example 093
 
 ## Category
 
@@ -2598,7 +2598,7 @@ Honestly, I'm not sure. Most of the things that have taken me a long time to lea
 
 ---
 
-# Example 247
+# Example 094
 
 ## Category
 
@@ -2621,7 +2621,7 @@ Competent, dependable, and fast-learning. I think people would say competent bec
 
 ---
 
-# Example 248
+# Example 095
 
 ## Category
 
@@ -2646,7 +2646,7 @@ The reason I don't view that as a fatal weakness is that I'm very aware of it. I
 
 ---
 
-# Example 249
+# Example 096
 
 ## Category
 
@@ -2669,7 +2669,7 @@ A manager would promote me because they can count on me. I am dependable, accoun
 
 ---
 
-# Example 250
+# Example 097
 
 ## Category
 
@@ -2692,7 +2692,7 @@ Probably my people skills. I am dependable and highly focused on the work, but I
 
 ---
 
-# Example 251
+# Example 098
 
 ## Category
 
@@ -2716,7 +2716,7 @@ I tend to stay calm in chaotic situations. When things become ambiguous or high-
 
 ---
 
-# Example 252
+# Example 099
 
 ## Category
 
@@ -2739,7 +2739,7 @@ During the Tacoma Power project, I initially thought we should focus only on XGB
 
 ---
 
-# Example 253
+# Example 100
 
 ## Category
 
