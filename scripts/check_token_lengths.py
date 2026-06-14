@@ -63,7 +63,7 @@ def main():
             print(f"- {file_name}, line {line_num}: {n_tokens} tokens | {question}")
         raise SystemExit(1)
 
-    print("All examples fit ✅")
+    print("All examples fit OK")
 
 
 if __name__ == "__main__":
