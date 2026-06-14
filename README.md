@@ -24,6 +24,12 @@ pip install -r requirements.txt
 
 ---
 
+create data:  
+python scripts/build_sft_jsonl.py (put version here)  
+
+validate data:  
+python scripts/validate_jsonl.py (put version here)  
+
 training:  
 python scripts/train_qlora.py configs/qwen_lora_v001.json  
 
