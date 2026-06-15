@@ -33,6 +33,8 @@ python scripts/validate_jsonl.py (put version here)
 training:  
 python scripts/train_qlora.py configs/qwen_lora_v001.json  
 
+training runs are tracked with MLflow; see docs/mlflow_training.md  
+
 evaluation:  
 python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.jsonl evals/scores_v001.csv  
 
