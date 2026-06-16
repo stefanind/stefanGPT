@@ -1,0 +1,12 @@
+{
+  "mlflow_run_id": "542ca10a6e64444c93cdf5b9c5a5ed16",
+  "mlflow_tracking_uri": "file:///workspace/stefanGPT/mlruns",
+  "run_name": "v002-qwen-stefan-lora",
+  "git_sha": "bf4a4b3405c7f1e877ecf0042791a7416cee65ff",
+  "git_branch": "main",
+  "git_dirty": true,
+  "dataset_version": "v002",
+  "dataset_manifest": "data/v002/dataset_manifest.json",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_output_dir": "outputs/v002-qwen-stefan-lora"
+}
