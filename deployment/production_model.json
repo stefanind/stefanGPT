@@ -1,8 +1,8 @@
 {
   "environment": "production",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
-  "adapter_uri": "stefanind/qwen-stefan-lora-v001",
-  "dataset_version": "v001",
+  "adapter_uri": "stefanind/qwen-stefan-lora-v002",
+  "dataset_version": "v002",
   "rag_index_dir": "rag_index",
   "notes": "Current live RunPod Serverless production model."
 }

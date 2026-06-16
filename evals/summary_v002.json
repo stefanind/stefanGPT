@@ -1,0 +1,20 @@
+{
+  "model_version": "v002",
+  "adapter_dir": "outputs/v002-qwen-stefan-lora",
+  "training_mlflow_run_id": "542ca10a6e64444c93cdf5b9c5a5ed16",
+  "eval_questions": "evals/eval_questions.jsonl",
+  "eval_questions_sha256": "48f6317da59774a9a727e048218c59921f9f72085caddd7f7fc2b0cfbbe5367a",
+  "eval_results": "evals/results_v002.jsonl",
+  "eval_results_sha256": "21d09a29aacfce51d38923d954699f3af7734aabeba06bc37944698502401965",
+  "score_sheet": "evals/scores_v002.csv",
+  "generation": {
+    "max_new_tokens": 500,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "repetition_penalty": 1.05
+  },
+  "reviewed_by": "",
+  "decision": "pending_review",
+  "summary": "",
+  "notes": ""
+}
