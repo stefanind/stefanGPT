@@ -16,7 +16,7 @@ SYSTEM_PROMPT = (
 )
 
 RANDOM_SEED = 44
-VAL_SIZE = 0.2
+VAL_SIZE = 0.1
 
 
 def sha256_file(path: Path) -> str:

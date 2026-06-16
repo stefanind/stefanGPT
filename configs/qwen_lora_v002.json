@@ -22,5 +22,8 @@
   "save_steps": 25,
 
   "bf16": true,
-  "packing": false
+  "packing": false,
+  "save_strategy": "no",
+  "load_best_model_at_end": false,
+  "save_total_limit": 1
 }
