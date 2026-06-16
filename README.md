@@ -11,7 +11,27 @@ v001 is currently deployed and operational on my github pages. Try it out: https
 
 For v002:  
 Will concurrently add new data to improve where it lacks.  
-I have to add more recruiter-facing data, such as info about my projects, my takes on them, and behavioral-style interview questions and answers.
+I have to add more recruiter-facing data, such as info about my projects, my takes on them, and behavioral-style interview questions and answers.  
+
+Also, incorporating staging vs production, versioning with MLFlow, and CI/CD.  
+
+Later on I will add more robust evaluation.
+
+
+## v001 specs
+
+150 sft examples:  worldview, personal, scenario, ai, career, books  
+
+eval set: 50 samples focused on targetting the sft data  
+
+RAG: Super basic. Split files by char count. Chunks only have source + chunk_id + text. Retrieval is pure embedding similarity over top_k. Not aligned w/ eval and production.  
+
+## v002 specs  
+
+
+RAG: Chunks include headings now and by markdown sections. New retrieval gets more candidates and applies a small lexical boost to keywords to ensure short factual questions get the right content. Now is called during run_eval.py.
+
+
 
 ## quick install and run commands
 
@@ -40,4 +60,3 @@ python scripts/run_eval.py outputs/v001-qwen-stefan-lora evals/results_v001.json
 
 command for VERIFYING CUDA + TORCH, if needed  
 python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.version.cuda)"  
-
