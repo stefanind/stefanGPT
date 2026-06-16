@@ -273,6 +273,8 @@ def main():
             mlflow.log_params(flatten_params("dataset", dataset_manifest))
             mlflow.log_artifact(str(config_copy_path), artifact_path="config")
             mlflow.log_artifact(str(dataset_manifest_file), artifact_path="data")
+            mlflow.log_artifact(str(train_file), artifact_path="data")
+            mlflow.log_artifact(str(val_file), artifact_path="data")
 
             if rag_manifest_file.exists():
                 mlflow.log_artifact(str(rag_manifest_file), artifact_path="rag")

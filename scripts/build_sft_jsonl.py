@@ -1,6 +1,7 @@
 import json
 import re
 import sys
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from sklearn.model_selection import train_test_split
@@ -16,6 +17,16 @@ SYSTEM_PROMPT = (
 
 RANDOM_SEED = 44
 VAL_SIZE = 0.2
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(block)
+
+    return digest.hexdigest()
 
 
 def clean_section(text: str) -> str:
@@ -42,9 +53,13 @@ def parse_md_file(path: Path):
 
     examples = []
 
-    for chunk in chunks:
+    for fallback_index, chunk in enumerate(chunks, start=1):
         if not chunk.strip().startswith("# Example"):
             continue
+
+        match = re.match(r"# Example\s+(\d+)", chunk.strip())
+        example_num = int(match.group(1)) if match else fallback_index
+        example_id = f"{path.stem}-{example_num:03d}"
 
         category = extract_section(chunk, "Category") or path.stem
         question = extract_section(chunk, "Question")
@@ -55,8 +70,10 @@ def parse_md_file(path: Path):
             continue
 
         examples.append({
+            "id": example_id,
             "category": category,
             "source_file": path.name,
+            "source_example": example_num,
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": question},
@@ -74,24 +91,30 @@ def write_jsonl(path: Path, rows):
 
 
 def main():
-    if len(sys.argv) != 2:
-        raise SystemExit("Usage: python scripts/build_sft_jsonl.py v001")
+    if len(sys.argv) not in {2, 3}:
+        raise SystemExit("Usage: python scripts/build_sft_jsonl.py v001 [--overwrite]")
 
     version = sys.argv[1]
+    overwrite = len(sys.argv) == 3 and sys.argv[2] == "--overwrite"
+
+    if len(sys.argv) == 3 and not overwrite:
+        raise SystemExit("Only supported option is --overwrite")
 
     if not re.fullmatch(r"v\d{3}", version):
         raise SystemExit("Version must look like v001, v002, v003, etc.")
 
     out_dir = DATA_DIR / version
-    out_dir.mkdir(parents=True, exist_ok=False)
+    out_dir.mkdir(parents=True, exist_ok=overwrite)
 
     all_examples = []
     source_counts = {}
+    source_hashes = {}
 
     for md_path in sorted(SFT_DIR.glob("*.md")):
         examples = parse_md_file(md_path)
         all_examples.extend(examples)
         source_counts[md_path.name] = len(examples)
+        source_hashes[md_path.name] = sha256_file(md_path)
 
     if len(all_examples) < 2:
         raise SystemExit("Need at least 2 examples to create train/val split.")
@@ -123,6 +146,11 @@ def main():
         "validation_size": VAL_SIZE,
         "random_seed": RANDOM_SEED,
         "source_counts": source_counts,
+        "source_hashes": source_hashes,
+        "train_file_sha256": sha256_file(train_file),
+        "val_file_sha256": sha256_file(val_file),
+        "train_example_ids": [row["id"] for row in train],
+        "val_example_ids": [row["id"] for row in val],
         "system_prompt": SYSTEM_PROMPT,
         "notes": "",
     }

@@ -38,6 +38,8 @@ Each run logs:
 
 Training does not deploy a model. Deployment still happens by changing `deployment/staging_model.json` or `deployment/production_model.json` in a PR.
 
+Eval logging is separate; see `docs/eval_workflow.md`.
+
 ## Disable Logging
 
 For a one-off local run without MLflow:
